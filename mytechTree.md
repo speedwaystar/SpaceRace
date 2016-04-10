@@ -1,17 +1,17 @@
 
 # My Tech Tree
 
-* tier 0 * 1945-1950 start "sounding rockets" aerobee/bumper, R-1
-* tier 1 * 1950-1955 basicRocketry "going ballistic" vanguard/redstone, R-5
-* tier 2 * 1955-1960 generalRocketry "dogs in space" atlas/titan-1/thor-delta, R-7/vostok/sputnik/luna
-* tier 3 * 1960-1965 advRocketry "first kerbal in space" mercury, block E&L/vostok/molniya/zond/luna
-* tier 4 * 1965-1970 heavyRocketry "ground control to major kerman" gemini, block I/voskhod/soyuz/proton/zond/N1
-* tier 5 * 1970-1975 heavierRocketry "mun or bust" apollo, N1
-* tier 6 * 1975-1980 nuclearPropulsion "islands in the sky" skylab, salyut
-* tier 7 * 1980-1990 veryHeavyRocketry "reusable space program" space shuttle/space lab, energia/zenit/progress/buran/mir
-* tier 8 * 1990-2000 experimentalRocketry "joining hands" hubble/ISS, soyuz-TMA/fregat
-* tier 9 * 2000-2010 giganticRocketry "commercial resupply" delta-2/atlas-3,tiangong
-* tier 10 * 2010-2020 colossalRocketry "beyond LKO" spaceY/sls/orion/altair/constellation/ares, angara/federation
+* tier 0 * start "sounding rockets" 1945-1950: aerobee/bumper, R-1
+* tier 1 * basicRocketry "going ballistic" 1950-1955: vanguard/redstone, R-5
+* tier 2 * generalRocketry "kanines in space" 1955-1960: atlas/titan-1/thor-delta, R-7/vostok/sputnik/luna
+* tier 3 * advRocketry "first kerbal in space" 1960-1965: mercury, block E&L/vostok/molniya/zond/luna
+* tier 4 * heavyRocketry "ground control to major kerman" 1965-1970: gemini, block I/voskhod/soyuz/proton/zond/N1
+* tier 5 * heavierRocketry "mun or bust" 1970-1980: apollo/skylab, N1/salyut
+* tier 6 * nuclearPropulsion "reusable space program" 1980-1990: space shuttle/space lab, energia/zenit/progress/buran/mir
+* tier 7 * veryHeavyRocketry "islands in the sky" 1990-2000: hubble/KISS, soyuz-TMA/fregat
+* tier 8 * experimentalRocketry "commercial resupply" 2000-2010: delta-2/atlas-3,tiangong
+* tier 9 * giganticRocketry "back to the mun" 2010-2020: spaceY/orion/altair/ares, angara/federation
+* tier 10 * colossalRocketry "duna direct" 2020-2030: sls/constellation
 
 
 # RP0 Tech Tree
