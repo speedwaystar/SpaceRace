@@ -3,14 +3,14 @@
 
 * tier 0 * start "sounding rockets" 1945-1950: aerobee, A3
 * tier 1 * basicRocketry "going ballistic" 1950-1955: blossom-1/bumper, R1-5
-* tier 2 * generalRocketry "kanines in space" 1955-1960: "kanines in space" 1955-1960: redstone/vanguard, R-7/vostok/sputnik/luna
-* tier 3 * advRocketry "first kerbal in space" 1960-1965: mercury, block E&L/vostok/molniya/zond/luna
-* tier 4 * heavyRocketry "ground control to major kerman" 1965-1970: gemini, block I/voskhod/soyuz/proton/zond/N1
-* tier 5 * heavierRocketry "mun or bust" 1970-1980: apollo/skylab, N1/salyut
-* tier 6 * nuclearPropulsion "reusable space program" 1980-1990: space shuttle/space lab, energia/zenit/progress/buran/mir
-* tier 7 * veryHeavyRocketry "islands in the sky" 1990-2000: hubble/KISS, soyuz-TMA/fregat
-* tier 8 * experimentalRocketry "commercial resupply" 2000-2010: delta-2/atlas-3,tiangong
-* tier 9 * giganticRocketry "back to the mun" 2010-2020: spaceY/orion/altair/ares, angara/federation
+* tier 2 * generalRocketry "kanines in space" 1955-1960: vanguard/redstone/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3
+* tier 3 * advRocketry "first kerbal in space" 1960-1965: mercury/scout/atlas, mariner, block E&L/vostok, polyot
+* tier 4 * heavyRocketry "ground control to major kerman" 1965-1970: gemini/thor, surveyor/pioneer6-9, block I/voskhod/soyuz/proton/zond, molniya/luna9-11
+* tier 5 * heavierRocketry "the kraken has landed" 1970-1980: apollo/skylab, pioneer10-11/voyager, N1/salyut1-4
+* tier 6 * nuclearPropulsion "reusable space program" 1980-1990: space shuttle/space lab/salyut6-7, ius/magellan/tdrsA-G, energia/zenit/progress/buran/mir
+* tier 7 * veryHeavyRocketry "islands in the sky" 1990-2000: hubble/KISS/galileo/NEARshoemaker/deepspace1/ulysses, soyuz-TMA/fregat
+* tier 8 * experimentalRocketry ""commercial resupply" 2000-2010: delta-2/atlas-3, EOS/messenger/deepimpact/dawn/newhorizons, tiangong
+* tier 9 * giganticRocketry "back to the mun or bust" 2010-2020: spaceY/orion/altair/ares, angara/federation
 * tier 10 * colossalRocketry "duna direct" 2020-2030: sls/constellation
 
 
