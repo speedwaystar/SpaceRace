@@ -335,7 +335,7 @@
 	@TechRequired = cuttingEdgeSolarTech
 }
 
-// * tier 9 * giganticRocketry "back to the mun or bust" 2010-2020: spaceY/orion/altair/ares, angara/federation
+// * tier 9 * giganticRocketry "back to the mun or bust" 2010-2020: orion/altair/ares, spaceY/antares/cygnus, angara/federation
 @PART[]:NEEDS[]:NEEDS[CommunityTechTree]
 {
 	@TechRequired = giganticRocketry
