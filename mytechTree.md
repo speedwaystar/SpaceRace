@@ -1,9 +1,9 @@
 
 # My Tech Tree
 
-* tier 0 * start "sounding rockets" 1945-1950: aerobee/bumper, R-1
-* tier 1 * basicRocketry "going ballistic" 1950-1955: vanguard/redstone, R-5
-* tier 2 * generalRocketry "kanines in space" 1955-1960: atlas/titan-1/thor-delta, R-7/vostok/sputnik/luna
+* tier 0 * start "sounding rockets" 1945-1950: aerobee, A3
+* tier 1 * basicRocketry "going ballistic" 1950-1955: blossom-1/bumper, R1-5
+* tier 2 * generalRocketry "kanines in space" 1955-1960: "kanines in space" 1955-1960: redstone/vanguard, R-7/vostok/sputnik/luna
 * tier 3 * advRocketry "first kerbal in space" 1960-1965: mercury, block E&L/vostok/molniya/zond/luna
 * tier 4 * heavyRocketry "ground control to major kerman" 1965-1970: gemini, block I/voskhod/soyuz/proton/zond/N1
 * tier 5 * heavierRocketry "mun or bust" 1970-1980: apollo/skylab, N1/salyut
