@@ -31,7 +31,7 @@
 }
 
 //
-// * tier 3 * advRocketry "first kerbal in space" 1960-1965: mercury/scout/atlas, mariner, block E&L/vostok, polyot
+// * tier 3 * advRocketry "first kerbal in space" 1960-1965: mercury/atlas/scout, mariner, block E&L/vostok, polyot
 //
 @PART[]:NEEDS[]
 {
@@ -45,9 +45,13 @@
 {
 	@TechRequired = flightControl
 }
-@PART[]:NEEDS[]
+@PART[]:NEEDS[]:NEEDS[CommunityTechTree]
 {
 	@TechRequired = enhancedSurvivability
+}
+@PART[]:NEEDS[]:NEEDS[!CommunityTechTree]
+{
+	@TechRequired = basicScience
 }
 @PART[]:NEEDS[]
 {
@@ -55,7 +59,7 @@
 }
 
 //
-// * tier 4 * heavyRocketry "ground control to major kerman" 1965-1970: gemini/thor, surveyor/pioneer6-9, block I/voskhod/soyuz/proton/zond, molniya/luna9-11
+// * tier 4 * heavyRocketry "ground control to major kerman" 1965-1970: gemini/delta/centaur/thor/agena, surveyor/pioneer6-9, block I/voskhod/soyuz/proton/zond, molniya/luna9-11
 //
 @PART[]:NEEDS[]
 {
@@ -81,9 +85,13 @@
 {
 	@TechRequired = advFlightControl
 }
-@PART[]:NEEDS[]
+@PART[]:NEEDS[]:NEEDS[CommunityTechTree]
 {
 	@TechRequired = simpleCommandModules
+}
+@PART[]:NEEDS[]:NEEDS[!CommunityTechTree]
+{
+	@TechRequired = spaceExploration
 }
 @PART[]:NEEDS[]
 {
@@ -99,7 +107,7 @@
 }
 
 //
-// * tier 5 * heavierRocketry "the kraken has landed" 1970-1980: apollo/skylab, pioneer10-11/voyager, N1/salyut1-4
+// * tier 5 * heavierRocketry "the kraken has landed" 1970-1980: saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1/salyut1-4
 //
 @PART[]:NEEDS[]
 {
@@ -146,7 +154,7 @@
 	@TechRequired = advElectrics
 }
 
-// * tier 6 * nuclearPropulsion "reusable space program" 1980-1990: space shuttle/space lab/salyut6-7, ius/magellan/tdrsA-G, energia/zenit/progress/buran/mir
+// * tier 6 * nuclearPropulsion "reusable space program" 1980-1990: STS/nova, spacelab/salyut6-7, ius/magellan/tdrsA-G, energia/zenit/progress/buran/mir
 
 @PART[]:NEEDS[]
 {
@@ -161,6 +169,10 @@
 	@TechRequired = advMetalworks
 }
 @PART[]:NEEDS[]
+{
+	@TechRequired = composites
+}
+@PART[]:NEEDS[]:NEEDS[!CommunityTechTree]
 {
 	@TechRequired = composites
 }
@@ -179,6 +191,10 @@
 @PART[]:NEEDS[]:NEEDS[CommunityTechTree]
 {
 	@TechRequired = heavyCommandModules
+}
+@PART[]:NEEDS[]:NEEDS[!CommunityTechTree]
+{
+	@TechRequired = scienceTech
 }
 @PART[]:NEEDS[]
 {
@@ -220,6 +236,10 @@
 {
 	@TechRequired = experimentalActuators
 }
+@PART[]:NEEDS[]:NEEDS[!CommunityTechTree]
+{
+	@TechRequired = metamaterials
+}
 @PART[]:NEEDS[]
 {
 	@TechRequired = advMotors
@@ -227,6 +247,10 @@
 @PART[]:NEEDS[]:NEEDS[CommunityTechTree]
 {
 	@TechRequired = specializedCommandModules
+}
+@PART[]:NEEDS[]:NEEDS[!CommunityTechTree]
+{
+	@TechRequired = advScienceTech
 }
 @PART[]:NEEDS[]
 {
@@ -252,12 +276,16 @@
 {
 	@TechRequired = specializedElectrics
 }
+@PART[]:NEEDS[]:NEEDS[!CommunityTechTree]
+{
+	@TechRequired = specializedElectrics
+}
 @PART[]:NEEDS[]:NEEDS[CommunityTechTree]
 {
 	@TechRequired = advSolarTech
 }
 
-// * tier 8 * experimentalRocketry "commercial resupply" 2000-2010: delta-2/atlas-3, EOS/messenger/deepimpact/dawn/newhorizons, tiangong
+// * tier 8 * experimentalRocketry "commercial resupply" 2000-2010: delta-2/atlas3-V, EOS/messenger/deepimpact/dawn/newhorizons, tiangong
 @PART[]:NEEDS[]:NEEDS[CommunityTechTree]
 {
 	@TechRequired = experimentalRocketry
@@ -349,7 +377,7 @@
 	@TechRequired = microwavePowerTransmission
 }
 
-// * tier 10 * colossalRocketry "duna direct" 2020-2030: sls/constellati
+// * tier 10 * colossalRocketry "duna direct" 2020-2030: sls/constellation
 @PART[]:NEEDS[]:NEEDS[CommunityTechTree]
 {
 	@TechRequired = colossalRocketry
