@@ -15,7 +15,7 @@
 }
 
 //
-// * tier 2 * generalRocketry "kanines in space" 1955-1960: vanguard/redstone/juno2/thor-able, R-7/vostok/sputnik/luna
+// * tier 2 * generalRocketry "kanines in space" 1955-1960: vanguard/redstone/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna
 //
 @PART[]:NEEDS[]
 {
@@ -31,7 +31,7 @@
 }
 
 //
-// * tier 3 * advRocketry "first kerbal in space" 1960-1965: mercury/scout/atlas, block E&L/vostok/molniya/zond/lunaluna3
+// * tier 3 * advRocketry "first kerbal in space" 1960-1965: mercury/scout/atlas, mariner, block E&L/vostok/molniya/zond, luna3
 //
 @PART[]:NEEDS[]
 {
@@ -55,7 +55,7 @@
 }
 
 //
-// * tier 4 * heavyRocketry "ground control to major kerman" 1965-1970: gemini/thor, block I/voskhod/soyuz/proton/zond/N1
+// * tier 4 * heavyRocketry "ground control to major kerman" 1965-1970: gemini/thor, surveyor/pioneer6-9, block I/voskhod/soyuz/proton/zond
 //
 @PART[]:NEEDS[]
 {
@@ -99,7 +99,7 @@
 }
 
 //
-// * tier 5 * heavierRocketry "mun or bust" 1970-1980: apollo/skylab, N1/salyut
+// * tier 5 * heavierRocketry "the kraken has landed" 1970-1980: apollo/skylab, pioneer10-11/voyager, N1/salyut1-4
 //
 @PART[]:NEEDS[]
 {
@@ -146,7 +146,8 @@
 	@TechRequired = advElectrics
 }
 
-// * tier 6 * nuclearPropulsion "reusable space program" 1980-1990: space shuttle/space lab, energia/zenit/progress/buran/mir
+// * tier 6 * nuclearPropulsion "reusable space program" 1980-1990: space shuttle/spacelab/salyut6-7, ius/magellan/tdrsA-G, energia/zenit/progress/buran/mir
+
 @PART[]:NEEDS[]
 {
 	@TechRequired = nuclearPropulsion
@@ -197,8 +198,8 @@
 }
 
 //
-// * tier 7 * veryHeavyRocketry "islands in the sky" 1990-2000: hubble/KISS, soyuz-TMA/fregat
-//
+// * tier 7 * veryHeavyRocketry "islands in the sky" 1990-2000: hubble/KISS/galileo/NEARshoemaker/deepspace1/ulysses, soyuz-TMA/fregat
+
 @PART[]:NEEDS[]
 {
 	@TechRequired = veryHeavyRocketry
@@ -256,7 +257,7 @@
 	@TechRequired = advSolarTech
 }
 
-// * tier 8 * experimentalRocketry "commercial resupply" 2000-2010: delta-2/atlas-3,tiangong
+// * tier 8 * experimentalRocketry "commercial resupply" 2000-2010: delta-2/atlas-3, EOS/messenger/deepimpact/dawn/newhorizons, tiangong
 @PART[]:NEEDS[]:NEEDS[CommunityTechTree]
 {
 	@TechRequired = experimentalRocketry
@@ -306,7 +307,7 @@
 	@TechRequired = cuttingEdgeSolarTech
 }
 
-// * tier 9 * giganticRocketry "back to the mun" 2010-2020: spaceY/orion/altair/ares, angara/federation
+// * tier 9 * giganticRocketry "back to the mun or bust" 2010-2020: spaceY/orion/altair/ares, angara/federation
 @PART[]:NEEDS[]:NEEDS[CommunityTechTree]
 {
 	@TechRequired = giganticRocketry
