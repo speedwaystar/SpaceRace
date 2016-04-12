@@ -59,7 +59,7 @@
 }
 
 //
-// * tier 4 * heavyRocketry "ground control to major kerman" 1965-1970: gemini/delta/centaur/thor/agena, surveyor/pioneer6-9, block I/voskhod/soyuz/proton/zond, molniya/luna9-11
+// * tier 4 * heavyRocketry "ground control to major kerman" 1965-1970: gemini/delta/centaur/thor/agena, surveyor/pioneer6-9, proton, voskhod/soyuz7K-OK/zond7K-L1, molniya/luna9-11
 //
 @PART[]:NEEDS[]
 {
@@ -107,7 +107,7 @@
 }
 
 //
-// * tier 5 * heavierRocketry "the kraken has landed" 1970-1980: saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, salyut1-6/almaz
+// * tier 5 * heavierRocketry "the kraken has landed" 1970-1980: saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, salyut1-6/almaz
 //
 @PART[]:NEEDS[]
 {
@@ -154,7 +154,7 @@
 	@TechRequired = advElectrics
 }
 
-// * tier 6 * nuclearPropulsion "reusable space program" 1980-1990: STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/progress/buran/mir
+// * tier 6 * nuclearPropulsion "reusable space program" 1980-1990: STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG/kosmosTKS/FGB
 
 @PART[]:NEEDS[]
 {
