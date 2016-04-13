@@ -16,15 +16,15 @@
 
 # RP0 Tech Tree
 
-* TIER 0 *** pre-1950s technology
-* TIER 1 *** mid 1950s, Redstone, R-5, Vanguard
-* TIER 2 *** R-7, Atlas, Titan I, Thor-Delta, J79, XLR99, X-15 bits
-* TIER 3 *** 1959-1965 or so. Molniya, Titan II, etc.
-* TIER 4 *** Apollo tech. Mid-late sixties.
-* TIER 5 *** Late 1960s, early-mid 1970s. Apollo Applications Program, N1F, etc.
-* TIER 6 *** Shuttle / Energia era. Late 70s through 1980s.
-* TIER 7 *** 1990s and early 2000s. Delta II, Atlas III, the first bits of EELV tech.
-* TIER 8 *** Modern day tech.
+* TIER 0 *** start: #TL-1 early tech. Sounding rockets, basic structural pieces and wings. Late 40s.
+* TIER 1 *** basicRocketry: #TL0: Vanguard, early-mid 50s tech. Includes Black Arrow engines because they're late-50s vintage.
+* TIER 2 *** generalRocketry: # TL1 Late 1950s/1960 tech, first real orbital LVs. Atlas, R-7, etc.
+* TIER 3 *** advRocketry: # TL2 1960-65 tech or so. Gemini, Voskhod, etc.
+* TIER 4 *** heavyRocketry: #TL3 Mid-late 60s tech. F-1, H-1 uprated, etc.
+* TIER 5 *** heavierRocketry: #TL4 Apollo Applications program, N1F, etc.
+* TIER 6 *** veryHeavyRocketry: #TL5 late 70s/80s tech, Shuttle / Energia era.
+* TIER 7 *** experimentalRocketry: #TL6, late 80s/90s, Delta II, Atlas III, the first bits of EELV tech.
+* TIER 8 *** giganticRocketry: #TL7, present day, Modern day tech.
 
 # Road to KOSMOS Tree
 
