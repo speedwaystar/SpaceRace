@@ -1,8 +1,7 @@
 # SpaceRace
-RP0-Stockalike for Historical Missions techtree tweaks
+RP0-Stockalike for Historical Missions techtree tweaks: a techtree designed to unlock parts in a vaguely historical order suitable for use with Whitecat106's [Contract Pack: Historical Missions](http://forum.kerbalspaceprogram.com/index.php?/topic/111178-105-contract-pack-historic-missions-v190-22032016-rss-is-back). 
 
 ## RP0-Stockalike Tech Tree
-
 * tier 0 * start "sounding rockets" 1945-1950: aerobee, A3
 * tier 1 * basicRocketry "going ballistic" 1950-1955: blossom-1/bumper, R1-5
 * tier 2 * generalRocketry "kanines in space" 1955-1960: vanguard/redstone/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3
@@ -15,8 +14,23 @@ RP0-Stockalike for Historical Missions techtree tweaks
 * tier 9 * giganticRocketry "back to the mun or bust" 2010-2020: spaceY/orion/altair/ares, angara/federation
 * tier 10 * colossalRocketry "duna direct" 2020-2030: sls/constellation
 
-## RP0 Tech Tree (for comparison)
+## alternate RP0-Stockalike Tech Tree
+alternatively by combining tiers 0-1 we would get room for interstellar/near future stuff
 
+* tier 0 * start "going ballistic" 1945-1955: aerobee, blossom-1/bumper, R1-5
+* tier 1 * basicRocketry "kanines in space" 1955-1960: vanguard/redstone/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3
+* tier 2 * generalRocketry "first kerbal in space" 1960-1965: mercury/scout/atlas, mariner, block E&L/vostok, polyot
+* tier 3 * advRocketry "ground control to major kerman" 1965-1970: gemini/thor, surveyor/pioneer6-9, block I/voskhod/soyuz/proton/zond, molniya/luna9-11
+* tier 4 * heavyRocketry "the kraken has landed" 1970-1980: apollo/skylab, pioneer10-11/voyager, N1/salyut1-4
+* tier 5 * heavierRocketry "reusable space program" 1980-1990: space shuttle/space lab/salyut6-7, ius/magellan/tdrsA-G, energia/zenit/progress/buran/mir
+* tier 6 * nuclearPropulsion "islands in the sky" 1990-2000: hubble/KISS/galileo/NEARshoemaker/deepspace1/ulysses, soyuz-TMA/fregat
+* tier 7 * veryHeavyRocketry "commercial resupply" 2000-2010: delta-2/atlas-3, EOS/messenger/deepimpact/dawn/newhorizons, tiangong
+* tier 8 * experimentalRocketry "back to the mun or bust" 2010-2020: spaceY/orion/altair/ares, angara/federation
+* tier 9 * giganticRocketry "duna direct" 2020-2030: sls/constellation
+* tier 10 * colossalRocketry "future tech" 2030+: ???
+
+## RP0 Tech Tree
+https://github.com/KSP-RO/RP-0 for comparitive purposes. 
 * TIER 0 *** start: #TL-1 early tech. Sounding rockets, basic structural pieces and wings. Late 40s.
 * TIER 1 *** basicRocketry: #TL0: Vanguard, early-mid 50s tech. Includes Black Arrow engines because they're late-50s vintage.
 * TIER 2 *** generalRocketry: # TL1 Late 1950s/1960 tech, first real orbital LVs. Atlas, R-7, etc.
@@ -28,7 +42,7 @@ RP0-Stockalike for Historical Missions techtree tweaks
 * TIER 8 *** giganticRocketry: #TL7, present day, Modern day tech.
 
 ## Road to KOSMOS Tree
-
+by [Niemand303](http://forum.kerbalspaceprogram.com/index.php?/topic/104200-road-to-kosmos-04-techtreepartswip-contracts)
 * Tier 0 "Start", 1945+: Postwar sounding rockets. Basically, it's a A-4, the rocket, from which many space programs have begun its way. Assemble, stick an experiment and let it fly for peace!
 * Tier 1 "Splitting up" 1950+: First national rockets. Early attempts at reaching space: Redstone and R-5 will be the main players, without capability to reach orbit, but able to reach further and touch the edge of space.
 At that point, several branches form itself: USSR (which will split into three others later) and US (thanks to centralisation, it will be more "stable").
