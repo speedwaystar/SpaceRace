@@ -11,7 +11,7 @@ RP0-Stockalike for Historical Missions techtree tweaks
 * tier 5 * heavierRocketry "the kraken has landed" 1970-1980: apollo/skylab, pioneer10-11/voyager, N1/salyut1-4
 * tier 6 * nuclearPropulsion "reusable space program" 1980-1990: space shuttle/space lab/salyut6-7, ius/magellan/tdrsA-G, energia/zenit/progress/buran/mir
 * tier 7 * veryHeavyRocketry "islands in the sky" 1990-2000: hubble/KISS/galileo/NEARshoemaker/deepspace1/ulysses, soyuz-TMA/fregat
-* tier 8 * experimentalRocketry ""commercial resupply" 2000-2010: delta-2/atlas-3, EOS/messenger/deepimpact/dawn/newhorizons, tiangong
+* tier 8 * experimentalRocketry "commercial resupply" 2000-2010: delta-2/atlas-3, EOS/messenger/deepimpact/dawn/newhorizons, tiangong
 * tier 9 * giganticRocketry "back to the mun or bust" 2010-2020: spaceY/orion/altair/ares, angara/federation
 * tier 10 * colossalRocketry "duna direct" 2020-2030: sls/constellation
 
