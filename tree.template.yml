@@ -1,0 +1,221 @@
+# TIER 0
+# 1945-1955 "sounding rockets" : aerobee, A4/blossom-1/bumper, R1-5. RP-0 TL-1, early tech.
+
+start:
+
+# TIER 1
+# 1950-1957 "going ballistic" : redstone. RP-0 TL0.
+
+basicRocketry:
+
+engineering101:
+
+#* TIER 2
+# 1957-~1960 "kanines in space" : vanguard/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
+
+generalRocketry:
+
+stability:
+
+survivability:
+
+# TIER 3
+# 1960-~1966 "first kerbal in space" : mercury/scout/atlas, mariner, block E&L/vostok, polyot. RP-0 TL2.
+
+advRocketry:
+
+generalConstruction:
+
+aviation:
+
+flightControl:
+
+#enhancedSurvivability:
+
+basicScience:
+
+# TIER 4
+# 1965-1970 "ground control to major kerman" : gemini/delta/centaur/thor/agena, surveyor/pioneer6-9, proton, voskhod/soyuz7K-OK/zond7K-L1, molniya/luna9-11. RP-0 TL3 F-1, H-1 uprated, etc.
+
+heavyRocketry:
+
+propulsionSystems:
+
+fuelSystems:
+
+advConstruction:
+
+aerodynamics:
+
+landing:
+
+advFlightControl:
+
+simpleCommandModules:
+
+spaceExploration:
+
+miniaturization: # probes, science, scanners
+
+electrics: # antennae, batteries, solar
+
+# TIER 5
+# 1970-1980 "the kraken has landed" : saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, salyut1-6/almaz. RP-0 TL4.
+
+heavierRocketry:
+
+precisionPropulsion:
+
+advFuelSystems:
+
+specializedConstruction:
+
+actuators:
+
+supersonicFlight:
+
+advAerodynamics:
+
+advLanding:
+
+specializedControl:
+
+commandModules:
+
+advExploration:
+
+precisionEngineering: # probes, science, scanners
+
+advElectrics: # antennae, batteries, solar
+
+# TIER 5.5
+
+nuclearPropulsion:
+
+largeVolumeContainment:
+
+advMetalWorks:
+
+composites:
+
+highAltitudeFlight:
+
+heavyAerodynamics:
+
+advActuators:
+
+heavyLanding:
+
+fieldScience:
+
+heavyCommandModules:
+
+scienceTech: # science, scanners
+
+unmannedTech: # probes
+
+electronics: # antennae, batteries
+
+largeElectrics: # solar
+
+# TIER 6
+# 1980-1990 "reusable space program" : STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG/kosmosTKS/FGB. RP-0 TL5.
+
+veryHeavyRocketry:
+
+highPerformanceFuelSystems:
+
+nanolathing:
+
+metaMaterials:
+
+experimentalActuators:
+
+hypersonicFlight:
+
+experimentalAerodynamics:
+
+advMotors:
+
+specializedCommandPods:
+
+advScienceTech: # scanners, science
+
+specializedScienceTech:
+
+ionPropulsion:
+
+advUnmannedTech: # probes
+
+automation:
+
+specializedElectrics: # antennae, batteries
+
+advSolarTechnology: # solar
+
+# TIER 7
+# 1990-2000 "islands in the sky" : hubble/KISS/galileo/NEARshoemaker/deepspace1/ulysses, soyuz-TMA/fregat. RP-0 TL6, the first bits of EELV tech.
+
+experimentalRocketry:
+
+specializedFuelStorage:
+
+exoticAlloys:
+
+offWorldRobotics:
+
+aerospaceTech:
+
+experimentalScience:
+
+longTermScienceTech:
+
+advIonPropulsion:
+
+largeProbes: # probes
+
+mechatronics:
+
+experimentalElectrics: # science, scanners
+
+advPhotovoltaicMaterials: # batteries
+
+cuttingEdgeSolarTechnology: # solar
+
+# TIER 8
+# 2000-2010 "commercial resupply" : delta-2/atlas3-V, EOS/messenger/deepimpact/dawn/newhorizons, tiangong. RP-0 TL7, Modern day tech.
+
+giganticRocketry:
+
+exoticFuelStorage:
+
+orbitalAssembly:
+
+advOffworldMining:
+
+scientificOutposts:
+
+plasmaPropulsion:
+
+advancedGriddedThrusters:
+
+artificialIntelligence:
+
+highTechElectricalSystems:
+
+microwavePowerTransmission:
+
+# TIER 9
+# 2010-2020 "back to the mun or bust" : orion/altair/ares, spaceY/antares/cygnus, angara/federation. RP-0 TL7.
+
+colossalRocketry:
+
+orbitalMegastructures:
+
+resourceExploitation:
+
+highEnergyScience:
+
+advAlectromagneticSystems:
+
+experimentalGriddedThrusters:

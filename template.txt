@@ -1,5 +1,5 @@
 //
-// * tier 0 * start "sounding rockets" 1945-1950: aerobee, A3
+// TIER 0 "sounding rockets" 1945-1955: aerobee, A4/blossom-1/bumper, R1-5. RP-0 TL-1, early tech.
 //
 @PART[]:NEEDS[]
 {
@@ -7,7 +7,7 @@
 }
 
 //
-// * tier 1 "going ballistic" 1950-1955: blossom-1/bumper, R1-5
+// TIER 1 "going ballistic" 1950-1957: redstone. RP-0 TL0.
 //
 @PART[]:NEEDS[]
 {
@@ -19,7 +19,7 @@
 }
 
 //
-// * tier 2 * generalRocketry "kanines in space" 1955-1960: vanguard/redstone/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3
+// TIER 2 "kanines in space" 1957-~1960: vanguard/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
 //
 @PART[]:NEEDS[]
 {
@@ -35,7 +35,7 @@
 }
 
 //
-// * tier 3 * advRocketry "first kerbal in space" 1960-1965: mercury/atlas/scout, mariner, block E&L/vostok, polyot
+// TIER 3 "first kerbal in space" 1960-~1966: mercury/scout/atlas, mariner, block E&L/vostok, polyot. RP-0 TL2.
 //
 @PART[]:NEEDS[]
 {
@@ -63,7 +63,7 @@
 }
 
 //
-// * tier 4 * heavyRocketry "ground control to major kerman" 1965-1970: gemini/delta/centaur/thor/agena, surveyor/pioneer6-9, proton, voskhod/soyuz7K-OK/zond7K-L1, molniya/luna9-11
+// TIER 4 "ground control to major kerman" 1965-1970: 1965-1970: gemini/delta/centaur/thor/agena, surveyor/pioneer6-9, proton, voskhod/soyuz7K-OK/zond7K-L1, molniya/luna9-11. RP-0 TL3 F-1, H-1 uprated, etc.
 //
 @PART[]:NEEDS[]
 {
@@ -111,7 +111,7 @@
 }
 
 //
-// * tier 5 * heavierRocketry "the kraken has landed" 1970-1980: saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, salyut1-6/almaz
+// TIER 5 "the kraken has landed" 1970-1980: saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, salyut1-6/almaz. RP-0 TL4.
 //
 @PART[]:NEEDS[]
 {
@@ -158,7 +158,7 @@
 	@TechRequired = advElectrics
 }
 
-// * tier 6 * nuclearPropulsion "reusable space program" 1980-1990: STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG/kosmosTKS/FGB
+// TIER 5.5
 
 @PART[]:NEEDS[]
 {
@@ -218,7 +218,7 @@
 }
 
 //
-// * tier 7 * veryHeavyRocketry "islands in the sky" 1990-2000: hubble/KISS/galileo/NEARshoemaker/deepspace1/ulysses, soyuz-TMA/fregat
+// * TIER 6 "reusable space program" 1980-1990: STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG/kosmosTKS/FGB. RP-0 TL5.
 
 @PART[]:NEEDS[]
 {
@@ -289,7 +289,7 @@
 	@TechRequired = advSolarTech
 }
 
-// * tier 8 * experimentalRocketry "commercial resupply" 2000-2010: delta-2/atlas3-V, EOS/messenger/deepimpact/dawn/newhorizons, tiangong
+// TIER 7 "islands in the sky" 1990-2000: hubble/KISS/galileo/NEARshoemaker/deepspace1/ulysses, soyuz-TMA/fregat. RP-0 TL6, the first bits of EELV tech.
 @PART[]:NEEDS[]:NEEDS[CommunityTechTree]
 {
 	@TechRequired = experimentalRocketry
@@ -339,7 +339,7 @@
 	@TechRequired = cuttingEdgeSolarTech
 }
 
-// * tier 9 * giganticRocketry "back to the mun or bust" 2010-2020: orion/altair/ares, spaceY/antares/cygnus, angara/federation
+// * TIER 8 "commercial resupply" 2000-2010: delta-2/atlas3-V, EOS/messenger/deepimpact/dawn/newhorizons, tiangong. RP-0 TL7, Modern day tech.
 @PART[]:NEEDS[]:NEEDS[CommunityTechTree]
 {
 	@TechRequired = giganticRocketry
@@ -381,8 +381,7 @@
 	@TechRequired = microwavePowerTransmission
 }
 
-// * tier 10 * colossalRocketry "duna direct" 2020-2030: sls/constellation
-@PART[]:NEEDS[]:NEEDS[CommunityTechTree]
+// * TIER 9 "back to the mun or bust" 2010-2020: orion/altair/ares, spaceY/antares/cygnus, angara/federation. RP-0 TL7.
 {
 	@TechRequired = colossalRocketry
 }
