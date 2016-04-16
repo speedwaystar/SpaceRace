@@ -53,7 +53,7 @@ advFlightControl:
 
 simpleCommandModules:
 
-spaceExploration:
+spaceExploration: #stations
 
 miniaturization: # probes, science, scanners
 
@@ -82,7 +82,7 @@ specializedControl:
 
 commandModules:
 
-advExploration:
+advExploration: #stations
 
 precisionEngineering: # probes, science, scanners
 
@@ -106,7 +106,7 @@ advActuators:
 
 heavyLanding:
 
-fieldScience:
+fieldScience: #stations
 
 heavyCommandModules:
 
