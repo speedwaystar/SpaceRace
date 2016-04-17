@@ -10,7 +10,7 @@ stability:
         cost: 200
     Vostok_Fairing_B: &VostokFairing
         cost: 20
-    rn_r7_vostok_fairing_r: *VostokFairing
+    Vostok_Fairing_F: *VostokFairing
     Vostok_Tank: # Vostok Equipment Module
         entryCost: 66000 # was 50m, +16m for heat shielding
         cost: 1800

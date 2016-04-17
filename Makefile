@@ -4,8 +4,8 @@
 
 PROJ_NAME = $(shell basename `pwd`)
 
-TREE_SRC := SpaceFactory.yml WernhersOldStuff.yml OMSK.yml
-TREE := Tree.cfg
+TREE_SRC := RP-0.yml SpaceFactory.yml WernhersOldStuff.yml OMSK.yml
+TREE := CombinedTree.cfg
 VERSION := $(shell git describe --tags)
 
 ZIPFILE := $(PROJ_NAME)-$(VERSION).zip

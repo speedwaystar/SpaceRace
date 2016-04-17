@@ -1143,8 +1143,6 @@ basicConstruction:
         cost: 120	
     rn_r7_adapter_blok_e: #decoupler
         cost: 100
-    rn_r7_adapter_blok_e_m:
-        cost: 100
     rn_luna_fairing:
         cost: 10
     rn_luna_base:
@@ -1153,7 +1151,7 @@ basicConstruction:
         cost: 100
     rn_r7_adapter_blok_i_m:
         cost: 100
-    rn_r7_adapter_blok_i_iv2:
+    rn_r7_adapter_blok_iv2:
         cost: 100
     rn_r7_vostok_fairing_r: &r7_fairing
         cost: 20
@@ -2110,9 +2108,7 @@ electrics:
     7k_ok_rsolar: *SoyuzSolar
     rn_7k_astp_lsolar:
     rn_7k_astp_rsolar:
-    
-    Tantares_Engine_A: *soyuzsm1
-    
+      
     # Apollo parts
     FASAApollo_SM_Dish:
         entryCost: 35000
