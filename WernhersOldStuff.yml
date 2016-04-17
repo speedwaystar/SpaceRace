@@ -1,0 +1,10 @@
+# tier 1 * basicRocketry "going ballistic" 1950-1955: blossom-1/bumper, R1-5
+start:
+    A4AutonomousController:
+    Wing4A4:
+    A4noseCone:
+    a4rocketengine:
+    A-4FuelTanks:
+
+ORPHANS:
+    a10rocketengine:

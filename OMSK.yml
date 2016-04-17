@@ -1,0 +1,53 @@
+# TIER 0 "sounding rockets" 1945-1955: aerobee, A4/blossom-1/bumper, R1-5. RP-0 TL-1, early tech.
+# TIER 1 "going ballistic" 1950-1957: redstone. RP-0 TL0.
+
+basicRocketry:
+    Omsk_RedstoneTank:
+        cost: 800
+
+# "kanines in space" 1957-~1960: vanguard/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
+
+generalRocketry:
+    omsk-k-7:
+
+stability:
+    omsk_ControlThing:
+    omsk_Luna-3-RSU:
+
+survivability:
+    omsk-luna-3-Antenna:
+    omsk_Luna-3:
+
+# TIER 3 "first kerbal in space" 1960-~1966: mercury/scout/atlas, mariner, block E&L/vostok, polyot. RP-0 TL2.
+
+advRocketry:
+    rtk-atlas-tank:
+        cost: 1201 # no cited research cost tho
+    rtk-atlas-engine2: &LR79
+        cost: 650
+    rtk-atlas-engine1: &LR89
+        cost: 750
+
+    rtk-atlas-centaur:
+        cost: 750
+        entryCost: 15000
+
+generalConstruction:
+    rtk-atlas-decoupler:
+
+# TIER 8 "commercial resupply" 2000-2010: delta-2/atlas3-V, EOS/messenger/deepimpact/dawn/newhorizons, tiangong. RP-0 TL7, Modern day tech.
+
+giganticRocketry:
+    Omsk_RD-180: &RD180
+        cost: 2700 
+    Omsk_RD-180_Orange: *RD180
+    omsk-rl-10:
+        cost: 1300 # lowered based off Centaur costs on Titan IIIE via http://www.astronautix.com/articles/costhing.htm
+ 
+exoticFuelStorage:
+    OMSK_atlasfueltankV_Orange:
+    Omsk_CentaurUpperStage:
+    OMSK_atlasfueltankV:
+
+orbitalAssembly:
+    AtlasVAdapter:

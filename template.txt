@@ -111,7 +111,7 @@
 }
 
 //
-// TIER 5 "the kraken has landed" 1970-1980: saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, salyut1-6/almaz. RP-0 TL4.
+// TIER 5 "the kraken has landed" 1970-1980: saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, luna17, salyut1-6/almaz. RP-0 TL4.
 //
 @PART[]:NEEDS[]
 {

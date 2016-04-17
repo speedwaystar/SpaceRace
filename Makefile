@@ -2,11 +2,10 @@
 # Do you have make on your system?
 # Just type 'make' and we'll build you one!
 
-# PROJ_NAME = $(shell basename `pwd`)
-PROJ_NAME = RN_US_Rockets
+PROJ_NAME = $(shell basename `pwd`)
 
-TREE_SRC := Tree.yml
-TREE := GameData/$(PROJ_NAME)/Tree.cfg
+TREE_SRC := SpaceFactory.yml WernhersOldStuff.yml OMSK.yml
+TREE := Tree.cfg
 VERSION := $(shell git describe --tags)
 
 ZIPFILE := $(PROJ_NAME)-$(VERSION).zip
