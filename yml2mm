@@ -17,7 +17,7 @@ use FindBin qw($Bin);
 # Editing this file? Make changes to the `yml2mm.lean` version, and
 # compile the portable version with `fatten yml2mm.lean yml2mm`
 
-my $DECORATION = "";
+my $DECORATION = ":FOR[SpaceRace]:Final";
 my $DEFAULT_ENTRY_MULT = 20;
 
 my %KNOWN_FIELDS;
@@ -83,8 +83,7 @@ foreach my $file (@ARGV) {
             #     }
             # }
 
-#            say "\@PART[$part]:$DECORATION\n{\n$changes}";
-            say "\@PART[$part]\n{\n$changes}";
+            say "\@PART[$part]$DECORATION\n{\n$changes}";
         }
     }
 }

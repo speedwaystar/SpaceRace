@@ -1137,9 +1137,9 @@ basicConstruction:
     sputnik2_nosecone: *sputnik_n_b
     rn_WING_R7:
         cost: 10
-    r7_blok_bvgd_sput: &R7Booster
+    rn_r7_blok_bvgd: &R7Booster
         cost: 100
-    r7_blok_a_sput:
+    rn_r7_blok_a:
         cost: 120	
     rn_r7_adapter_blok_e: #decoupler
         cost: 100
@@ -1157,14 +1157,6 @@ basicConstruction:
         cost: 20
     rn_r7_voskhod_fairing_r: *r7_fairing
     rn_r7_voskhod_fairing_l: *r7_fairing
-    r7_blok_bvgd: # Vostok
-        cost: 100 # the same as for the R7-Sputnik bvgd tank
-    r7_blok_bvgd_m: # Molniya
-        cost: 100
-    r7_blok_a: # Vostok
-        cost: 120 # the same as for the R7-Sputnik blok a
-    r7_blok_a_molniya: # Molniya
-        cost: 120
 
     #Tantares R-7 and Vostok tanks
     TLV_LFO_A:
@@ -1626,7 +1618,7 @@ fuelSystems: # Staged combustion, TL2
     ALV_Engine_B: #RD-0210/0211, Proton Second Stage
         cost: 1300
         
-    r7_blok_i_m: # Molniya Block-I
+    rn_r7_blok_i: # Molniya Block-I
         cost: 714 # 400 for the engine (exactly like RD-0110 from Soviet engines) + 114 for the tank + 200 for the avionics (30t)
     
     #Proton - RaiderNick
@@ -1766,10 +1758,6 @@ generalConstruction:
     ALF_LFO_B: *ProtonS3
     
     #RaiderNick - Soyuz
-    r7_blok_a_soyuz:
-        cost: 120 # the same as for the R7-Sputnik blok a
-    r7_blok_bvgd_s:
-        cost: 100 # the same as for the R7-Sputnik bvgd
     rn_r7_soyuz_fairing: &soyuzFairing
         cost: 20
     rn_r7_soyuz_fairing2: *soyuzFairing
@@ -2587,7 +2575,7 @@ advFlightControl:
         cost: 3500 # little higher than for standard Soyuz service module (this one has more powerful engine)
         entryCost: 95000
 
-    r7_les: # Soyuz Launch Escape System, cost = half of the Apollo LES
+    rn_r7_les: # Soyuz Launch Escape System, cost = half of the Apollo LES
         cost: 2500
         entryCost: 87500
 
