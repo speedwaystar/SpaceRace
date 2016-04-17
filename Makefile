@@ -5,7 +5,7 @@
 PROJ_NAME = $(shell basename `pwd`)
 
 TREE_SRC := RP-0.yml SpaceFactory.yml WernhersOldStuff.yml OMSK.yml
-TREE := CombinedTree.cfg
+TREE := GameData/SpaceRace/Tree.cfg
 VERSION := $(shell git describe --tags)
 
 ZIPFILE := $(PROJ_NAME)-$(VERSION).zip
