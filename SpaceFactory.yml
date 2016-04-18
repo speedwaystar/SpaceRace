@@ -1,10 +1,16 @@
-#* TIER 2
-# 1957-~1960 "kanines in space" : vanguard/juno2/atlas/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
-generalRocketry:
+# TIER 3
+# 1960-~1966 "ground control to major kerman" : mercury/gemini/scout/centaur/titan3, surveyor/pioneer6-7/mariner, block E&L/vostok/voskhod/proton/molniya, polyot/luna 9-13. RP-0 TL2.
+
+# mature orbital rocketry, 1963
+advRocketry:
+    #vostok
     Vostok_Block_E: # Vostok Block E RD-0105/0109
         cost: 535 # 350 for the engine (exactly like stock one) + 35 for the tank + 150 for the avionics (12t)
-        
-basicConstruction:
+    # voskhod
+    Voshod_TDU: # Voskhod TDU (main engine)
+
+# larger tanks
+generalConstruction:
     Vostok_Block_E_Dec: # Block E Decoupler
         entryCost: 7000
         cost: 200
@@ -12,28 +18,23 @@ basicConstruction:
         cost: 20
     Vostok_Fairing_F: *VostokFairing
 
-basicAvionics:
+# early digital avionics, 1964
+flightControl:
     Vostok_Tank: # Vostok Equipment Module
         entryCost: 66000 # was 50m, +16m for heat shielding
         cost: 1800
+    Voshod_Instrumental: # Voskhod Instrumental
+        entryCost: 25000
 
-survivability:
+# basic capsules with orbital reentry, 1960-63. mercury/vostok
+enhancedSurvivability:
+    # vostok
     Vostok_Module: # Vostok TDU Descent Module
         entryCost: 25000
         cost: 1000
     vostokan: # Vostok Descent Antenna
         cost: 400
-
-# TIER 3
-# 1960-~1966 "ground control to major kerman" : mercury/gemini/scout/centaur/titan3, surveyor/pioneer6-7/mariner, block E&L/vostok/voskhod/proton/molniya, polyot/luna 9-13. RP-0 TL2.
-advRocketry:
-    Voshod_TDU: # Voskhod TDU (main engine)
-
-flightControl:
-    Voshod_Instrumental: # Voskhod Instrumental
-        entryCost: 25000
-
-enhancedSurvivability:
+    # voskhod
     Voshod_Parachute: # Voskhod Parachute
     Voshod_Descent: # Voskhod Descent
         entryCost: 71000 # was 55, +16 for shielding
@@ -45,20 +46,18 @@ basicScience:
 
 # TIER 5
 # 1970-1980 "islands in the sky" : bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, luna17, salyut1-6/almaz. RP-0 TL4.
-precisionPropulsion:
-    LunaEngine: # Luna-17 main engine
 
-specializedConstruction:
+# advanced staged propulsion
+advExploration:
     Luna_tank: # Luna-17 Radial Tanks
     LunaPayload: # Luna-17 Lunakhod Platform
-
-precisionEngineering:
     Luna17: # Base module for Luna 17. It has fuel for landing, heavy legs, and science bank.
+    LunaEngine: # Luna-17 main engine
 
 # TIER 9
 # 2010-2020 "back to the mun or bust" : orion/altair/ares, spaceY/antares/cygnus, angara/federation. RP-0 TL7.
-colossalRocketry:
 
+colossalRocketry:
     # Angara parts
     angara_3rd_stage: # ANGARA 3rd
     angara_cone: # Protective Rocket Nose Mk7
@@ -69,12 +68,7 @@ colossalRocketry:
     RD_0124: # RD-0124 engine
     RD_191: # RD_191 engine
 
-orbitalMegastructures:
-
-resourceExploitation:
-
 highEnergyScience:
-
     # PPTS (Prospective Piloted Transport System aka Federation) parts
     PPTS_DESCENT: # PPTS Descent Module
     PPTS_DECOUPLER: # PPTS Decoupler
@@ -86,7 +80,3 @@ highEnergyScience:
     PPTS_SOLAR2: # PPTS Solar Panel
     PPTS_SHROUD: # PPTS Instrumental Shroud
     PPTS_ANTENNA: # PPTS Antenna
-
-advAlectromagneticSystems:
-
-experimentalGriddedThrusters:

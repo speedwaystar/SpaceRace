@@ -11,13 +11,13 @@ engineering101: # early construction
 earlyAvionics: # early electro-mechanical flight controllers, 1953-1957.
 
 # TIER 2
-# 1957-~1960 "kanines in space" : vanguard/juno2/atlas/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
+# 1957-~1960 "kanines in space" : vanguard/juno2/atlas/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7, sputnik/luna2-3. RP-0 TL1.
 
 generalRocketry: # basic orbital rocketry. 1958-1962
 basicSolids: # first all-solid launchers, 1957-1960
 basicConstruction: # larger tanks, 1958-1960
 basicAvionics: # electro-mechanical flight controllers
-survivability: # reentry-proof orbital probes, 1959
+survivability: # reentry-proof orbital probes, lunar impactors, 1959
 stability: # gyrostabilization and RCS, 1959
 
 # TIER 3
@@ -39,13 +39,13 @@ landing: # soft landing on other bodies, 1964-67
 simpleCommandModules: # second-gen capsules, with EVAs, 1964. gemini/voskhod
 
 # TIER 4
-# 1967-1969 "the kraken has landed" : saturnV, apollo/LEM, pioneer9, soyuz7K-OK/zond7K-L1, RP-0 TL3 F-1, H-1 uprated, etc.
+# 1967-1969 "the kraken has landed" : protonK/saturnV, apollo/LEM, pioneer9, soyuz7K-OK/zond7K-L1, RP-0 TL3 F-1, H-1 uprated, etc.
 
 hydroloxTL3: # hydrolox engines, 1967
 heavyRocketry: # heavy orbital rocketry, beyond LEO
 propulsionSystems: # improved staged combustion
 largeSolids: # large segmented solids
-advConstruction: # improved tanks, engines & heat shielding
+advConstruction: # improved tanks & lunar return heat shielding
 commandModules: # advanced capsules with lunar reentry. apollo/soyuz7K-OK/zond7K-L1
 spaceExploration: # crewed landers. LEM
 advElectrics: # antennae, probes, late 1960s
@@ -53,7 +53,7 @@ advFlightControl: # RCS, docking, avionics
 shortTermHabitation: # single mission designs with reentry vehicle attached.
 
 # TIER 5
-# 1970-1980 "islands in the sky" : bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, luna17, salyut1-6/almaz. RP-0 TL4.
+# 1970-1980 "islands in the sky" : bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/kosmosTKS/FGB/ASTP/apas75, luna17, salyut1-6/almaz. RP-0 TL4.
 
 hydroloxTL4: # mature hydrolox engines, 1970
 heavierRocketry: # refined rocketry
@@ -63,7 +63,7 @@ specializedConstruction:
 actuators:
 #advLanding: # deprecated
 specializedControl: # integrated circuit avionics, 1970s
-advExploration:
+advExploration: # lunar exploration (big gemini/luna17)
 precisionEngineering: # probes, science, scanners
 electronics: # microchips, early 1970s
 largeElectrics: # antennae, batteries, larger solar panels, early 1970s
@@ -85,7 +85,7 @@ scienceTech: # science, scanners
 unmannedTech: # probes
 
 # TIER 6
-# 1980-1990 "reusable space program" : STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG/kosmosTKS/FGB. RP-0 TL5.
+# 1980-1990 "reusable space program" : STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG. RP-0 TL5.
 
 hydroloxTL5: # closed-cycle hydrolox engines, 1980
 veryHeavyRocketry: # advanced rocketry

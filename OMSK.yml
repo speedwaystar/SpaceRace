@@ -1,30 +1,21 @@
-# TIER 0 "sounding rockets" 1945-1955: aerobee, A4/blossom-1/bumper, R1-5. RP-0 TL-1, early tech.
-# TIER 1 "going ballistic" 1950-1957: redstone. RP-0 TL0.
+# TIER 1
+# 1950-1957 "going ballistic" : redstone. RP-0 TL0.
 
+# early rocket launchers, spin stablized solid kick motors. 1950-1957.
 basicRocketry:
     omsk-k-7:
         cost: 800
-        
+
+# early construction
 engineering101:
     Omsk_RedstoneTank:
         cost: 350
 
-# "kanines in space" 1957-~1960: vanguard/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
+# TIER 2
+# 1957-~1960 "kanines in space" : vanguard/juno2/atlas/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7, sputnik/luna2-3. RP-0 TL1.
 
+# basic orbital rocketry. 1958-1962
 generalRocketry:
-
-
-stability:
-    omsk_ControlThing:
-    omsk_Luna-3-RSU:
-
-survivability:
-    omsk-luna-3-Antenna:
-    omsk_Luna-3:
-
-# TIER 3 "first kerbal in space" 1960-~1966: mercury/scout/atlas, mariner, block E&L/vostok, polyot. RP-0 TL2.
-
-advRocketry:
     rtk-atlas-tank:
         cost: 1201 # no cited research cost tho
     rtk-atlas-engine2: &LR79
@@ -32,15 +23,29 @@ advRocketry:
     rtk-atlas-engine1: &LR89
         cost: 750
 
-    rtk-atlas-centaur:
+# larger tanks, 1958-1960
+basicConstruction: 
+    rtk-atlas-decoupler:
+
+# reentry-proof orbital probes, lunar impactors, 1959
+survivability:
+    omsk_ControlThing:
+    omsk_Luna-3-RSU:
+    omsk-luna-3-Antenna:
+    omsk_Luna-3:
+
+# TIER 3
+# 1960-~1966 "ground control to major kerman" : mercury/gemini/scout/centaur/titan3, surveyor/pioneer6-7/mariner, block E&L/vostok/voskhod/proton/molniya, polyot/luna 9-13. RP-0 TL2.
+
+# staged combustion, 1961
+fuelSystems:
+    rtk-atlas-centaur: # 1962
         cost: 750
         entryCost: 15000
 
-generalConstruction:
-    rtk-atlas-decoupler:
-
 # TIER 8 "commercial resupply" 2000-2010: delta-2/atlas3-V, EOS/messenger/deepimpact/dawn/newhorizons, tiangong. RP-0 TL7, Modern day tech.
 
+# modern rocketry
 giganticRocketry:
     Omsk_RD-180: &RD180
         cost: 2700 
@@ -48,10 +53,8 @@ giganticRocketry:
     omsk-rl-10:
         cost: 1300 # lowered based off Centaur costs on Titan IIIE via http://www.astronautix.com/articles/costhing.htm
  
-exoticFuelStorage:
+orbitalAssembly:
     OMSK_atlasfueltankV_Orange:
     Omsk_CentaurUpperStage:
     OMSK_atlasfueltankV:
-
-orbitalAssembly:
     AtlasVAdapter:

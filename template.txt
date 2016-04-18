@@ -19,7 +19,7 @@
 }
 
 //
-// TIER 2 "kanines in space" 1957-~1960: vanguard/juno2/atlas/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
+// TIER 2 "kanines in space" 1957-~1960: vanguard/juno2/atlas/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7, sputnik/luna2-3. RP-0 TL1.
 //
 @PART[]:NEEDS[]
 {
