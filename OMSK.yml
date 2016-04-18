@@ -2,13 +2,17 @@
 # TIER 1 "going ballistic" 1950-1957: redstone. RP-0 TL0.
 
 basicRocketry:
-    Omsk_RedstoneTank:
+    omsk-k-7:
         cost: 800
+        
+engineering101:
+    Omsk_RedstoneTank:
+        cost: 350
 
 # "kanines in space" 1957-~1960: vanguard/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
 
 generalRocketry:
-    omsk-k-7:
+
 
 stability:
     omsk_ControlThing:

@@ -1,16 +1,18 @@
 #* TIER 2
-# 1957-~1960 "kanines in space" : vanguard/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
+# 1957-~1960 "kanines in space" : vanguard/juno2/atlas/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
 generalRocketry:
     Vostok_Block_E: # Vostok Block E RD-0105/0109
         cost: 535 # 350 for the engine (exactly like stock one) + 35 for the tank + 150 for the avionics (12t)
         
-stability:
+basicConstruction:
     Vostok_Block_E_Dec: # Block E Decoupler
         entryCost: 7000
         cost: 200
     Vostok_Fairing_B: &VostokFairing
         cost: 20
     Vostok_Fairing_F: *VostokFairing
+
+basicAvionics:
     Vostok_Tank: # Vostok Equipment Module
         entryCost: 66000 # was 50m, +16m for heat shielding
         cost: 1800
@@ -23,18 +25,16 @@ survivability:
         cost: 400
 
 # TIER 3
-# 1960-~1966 "first kerbal in space" : mercury/scout/atlas, mariner, block E&L/vostok, polyot. RP-0 TL2.
+# 1960-~1966 "ground control to major kerman" : mercury/gemini/scout/centaur/titan3, surveyor/pioneer6-7/mariner, block E&L/vostok/voskhod/proton/molniya, polyot/luna 9-13. RP-0 TL2.
 advRocketry:
     Voshod_TDU: # Voskhod TDU (main engine)
 
-generalConstruction:
+flightControl:
     Voshod_Instrumental: # Voskhod Instrumental
         entryCost: 25000
- 
-flightControl:
-    Voshod_Parachute: # Voskhod Parachute
 
 enhancedSurvivability:
+    Voshod_Parachute: # Voskhod Parachute
     Voshod_Descent: # Voskhod Descent
         entryCost: 71000 # was 55, +16 for shielding
         cost: 2000
@@ -44,17 +44,15 @@ basicScience:
         cost: 500
 
 # TIER 5
-# 1970-1980 "the kraken has landed" : saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, luna-17, salyut1-6/almaz. RP-0 TL4.
+# 1970-1980 "islands in the sky" : bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, luna17, salyut1-6/almaz. RP-0 TL4.
 precisionPropulsion:
     LunaEngine: # Luna-17 main engine
 
-advFuelSystems:
-    Luna_tank: # Luna-17 Radial Tanks
-
 specializedConstruction:
+    Luna_tank: # Luna-17 Radial Tanks
     LunaPayload: # Luna-17 Lunakhod Platform
 
-advLanding:
+precisionEngineering:
     Luna17: # Base module for Luna 17. It has fuel for landing, heavy legs, and science bank.
 
 # TIER 9

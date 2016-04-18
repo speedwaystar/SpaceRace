@@ -19,7 +19,7 @@
 }
 
 //
-// TIER 2 "kanines in space" 1957-~1960: vanguard/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
+// TIER 2 "kanines in space" 1957-~1960: vanguard/juno2/atlas/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
 //
 @PART[]:NEEDS[]
 {
@@ -35,7 +35,7 @@
 }
 
 //
-// TIER 3 "first kerbal in space" 1960-~1966: mercury/scout/atlas, mariner, block E&L/vostok, polyot. RP-0 TL2.
+// TIER 3 ground control to major kerman" 1960-~1966: mercury/gemini/scout/centaur/titan3, surveyor/pioneer6-7/mariner, block E&L/vostok/voskhod/proton/molniya, polyot/luna 9-13. RP-0 TL2.
 //
 @PART[]:NEEDS[]
 {
@@ -63,7 +63,7 @@
 }
 
 //
-// TIER 4 "ground control to major kerman" 1965-1970: 1965-1970: gemini/delta/centaur/thor/agena, surveyor/pioneer6-9, proton, voskhod/soyuz7K-OK/zond7K-L1, molniya/luna9-11. RP-0 TL3 F-1, H-1 uprated, etc.
+// TIER 4 "the kraken has landed" 1967-1969: saturnV, apollo/LEM, pioneer9, soyuz7K-OK/zond7K-L1, RP-0 TL3 F-1, H-1 uprated, etc.
 //
 @PART[]:NEEDS[]
 {
@@ -111,7 +111,7 @@
 }
 
 //
-// TIER 5 "the kraken has landed" 1970-1980: saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, luna17, salyut1-6/almaz. RP-0 TL4.
+// TIER 5 "islands in the sky" 1970-1980: bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, luna17, salyut1-6/almaz. RP-0 TL4.
 //
 @PART[]:NEEDS[]
 {

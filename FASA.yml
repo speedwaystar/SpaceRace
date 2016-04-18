@@ -20,13 +20,17 @@ start:
 # TIER 1
 # 1950-1957 "going ballistic" : redstone. RP-0 TL0.
 
+# early rocket launchers, spin stablized solid kick motors. 1950-1957.
 basicRocketry:
-
     # Redstone/Juno engine, kick motors (FASA)
     FASA_Mercury_Redstone_Eng:
         cost: 800
-        
-   
+    FASAExplorerSgt11:
+        cost: 40
+    FASAExplorerSgt3:
+        cost: 12
+     
+# early construction
 engineering101:
     # Redstone/Juno (FASA)
     FASAExplorerLFTLong:
@@ -37,133 +41,154 @@ engineering101:
         cost: 10
     FASAMercuryRedstoneFin:
         cost: 5
-    FASA_Mercury_LFT_Long: #FIXME Redstone costs
-        cost: 300
-    FASA_Mercury_LFT_Short:
-        cost: 150
-
+    FASAExplorerLFTSmall: # Generic tank
+    FASAExplorerLFTMed: # Generic tank  
+  
+# early electro-mechanical flight controllers, 1953-1957.
 earlyAvionics:
-    # Probes
-
-    # !!SCIENCE!!
-
     FASAProbeGeigerCounter: &GeigerCounter
         cost: 40
-    
-    # Redstone/Juno and Explorer 1 (FASA)
-    FASAExplorerNosecone:
-        entryCost: 7000
-        cost: 250
-
 
 # TIER 2
-# 1957-~1960 "kanines in space" : vanguard/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
+# 1957-~1960 "kanines in space" : vanguard/juno2/atlas/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
 
+# basic orbital rocketry. 1958-1962
 generalRocketry:
-      
     FASADeltaMB3LFE: &LR79
         cost: 650
-    FASAMercuryAtlasEngBooster: &LR89
-        cost: 750
-    FASAMercuryAtlasVernierEngine: &LR101
-        cost: 50
-    
-    FASAMercuryAtlasEng:  &LR105
-        cost: 550
+ 
+# first all-solid launchers, 1957-1960
+basicSolids:
+    FASAExplorerSgt:  &BabySergeant
+        cost: 5
 
-
-    # Titan engines
-    #FASA
-    FASAGeminiLR87Twin: &LR87
-        cost: 1550
-        entryCost: 16000 # no source, but should be the same as LR89's more or less
-
-    # Titan upper stage
-    FASAGeminiLR91Mini: # LR91-3, later versions on the LR91 part.
-        cost: 450
-    FASAGeminiLR91: &LR91
-        cost: 450
-    
+# larger tanks, 1958-1960    
 basicConstruction:
-    
     #below part is the Mercury - Atlas Launch Vehicle Fuel Tank
     FASA_Atlas_LFT_Cone:
         cost: 380
     FASAMercuryFairing:
         cost: 15
-    TitanIUpper:
-        cost: 237 # estimated based on proc+premium Atlas pays for Avionics
-    FASAGeminiLFTTitan1:
-        cost: 144 # est based on proc
-        
-    FASATitanLR91Dec: # Aerojet LR-91 Decoupler
-        cost: 75
-    FASAGeminiLFTLong:
-        cost: 187 # same as proc
-    FASAGeminiLFTMed:
-        cost: 250
-    # FIXME other Titan II parts go here, with costing.
-    FASAGeminiDecDark25_Titan3m:
-        cost: 75
-        
+
+# electro-mechanical flight controllers        
 basicAvionics:
-     # *** Avionics
     FASADeltaAv0:
         entryCost: 2500
         cost: 100
+
+# reentry-proof orbital probes, 1959
+survivability:
+    # Redstone/Juno and Explorer 1 (FASA)
+    FASAExplorerNosecone:
+        entryCost: 7000
+        cost: 250
     FASAExplorerProbe:
         cost: 158 # sourced
 
+# TIER 3
+# 1960-~1966 "ground control to major kerman" : mercury/gemini/scout/centaur/titan3, surveyor/pioneer6-7/mariner, block E&L/vostok/voskhod/proton/molniya, polyot/luna 9-13. RP-0 TL2.
 
-basicSolids:
-    FASAExplorerSgt:  &BabySergeant
-        cost: 5
-    FASAExplorerSgt11:
-        cost: 40
-    FASAExplorerSgt3:
-        cost: 12
+# first hydrolox engines, 1962
+hydroloxTL2:
+    FASAGeminiLFTCentar: # Centaur A/B/C/D/D1 stage
+        cost: 1201 # no cited research cost tho
+   
+    FASAApolloLFERL10: &RL10
+        cost: 1300 # lowered based off Centaur costs on Titan IIIE via http://www.astronautix.com/articles/costhing.htm
+        entryCost: 60000
 
+# mature orbital rocketry, 1963
+advRocketry:
+    FASAMercuryAtlasEng:  &LR105
+        cost: 550
+    FASAMercuryAtlasEngBooster: &LR89
+        cost: 750
+    FASAMercuryAtlasVernierEngine: &LR101
+        cost: 50    
+    # Titan engines
+    FASAGeminiLR87Twin: &LR87
+        cost: 1550
+        entryCost: 16000 # no source, but should be the same as LR89's more or less
+    # Titan upper stage
+    FASAGeminiLR91Mini: # LR91-3, later versions on the LR91 part.
+        cost: 450
+    FASAGeminiLR91: &LR91
+        cost: 450
+    # FASA Agena (CORONA)
+    FASAAgena_Engine: &AgenaEngine # Bell 8xxx engine for Agena
+        cost: 350
+    # TL2 1960-65 tech or so. Gemini, Voskhod, etc.     
+    FASAApolloLFEH1: &H1
+        cost: 1050
+        entryCost: 53750 # 33750 + 20,000 from LR79
+    FASAStrS1BWing:
+        cost: 50
+    FASAApalloLFTS1BStage1:
+        cost: 1800
+    FASA_SIB:
+        cost: 1800
+    FASAGeminiLFECentarTwin: # Transtage 
+        cost: 4300
+    #Europa launcher
+    FASASaturnUllage: &SaturnUllage
+        cost: 10
+
+# larger solids with thrust vectoring, 1960-1963
+matureSolids:
    # Add Polaris and Scout parts here
-    
     FASADeltaCastorSrb: &CastorI
         cost: 300 # nautix 1.01m assume 1985 dollars
 
-survivability: # 3-Axis Stability and early probes ##
+# larger tanks
+generalConstruction:
+    FASA_Mercury_LFT_Long: #FIXME Redstone costs
+        cost: 300
+    FASA_Mercury_LFT_Short:
+        cost: 150
+    FASAMercuryLFTShortLarge: # Generic tank
+    FASAAgenaLFT_b:
+        cost: 50 # compare to proc part costs
+    FASA_Atlas_LFT_Cone2: # Atlas E/F core
+        cost: 300 # cheaper than original
+    #below part is the Atlas SLV-3, 1966 first use. Lunar Orbiter
+    #nearly the same as LV-3 so the 2 can be used interchangeably
+    FASAMercuryAtlasLFTLong:
+        cost: 400
+    FASAAtlasLV3C:
+        cost: 400     
+    FASAICBMSAS: # this is just a decoupler, not sure why is SAS in the title
+        cost: 125 # similar to the other decouplers
+    FASAAgenaLFT: # Agena D tankage
+        cost: 50 # TODO compare to proc part
+      
+# early digital avionics, 1964
+flightControl:
+    # Stock docking ports
+    FASAAgenaDocking:
+        cost: 400
+    FASAAgenaProbe: &AgenaAvionics
+        cost: 800
+    FASAAgena_Engine_FP_b: # flight pack (secondary propulsion system) for Agena B restartable engine
+        cost: 300
+    FASAAgena_Engine_FP: # flight pack (3-axis control system) for Agena D restartable engine
+        cost: 250
+    FASAAgena_Engine_FP_d: # ahistoric (with-SPS) Agena D pack
+        cost: 300
+    # Gemini parts
+    FASAICBMnosecone:
+        cost: 50
+    FASAICBMProbe: # guidance unit
+        cost: 300 # similar to other guidance units
+    FASAICBMMIRV: # 9MT nuclear warhead
+        cost: 16000 # expensive so fortunately no one will use it
 
-    # Reentry
-
-    # Heatshields
-   
-stability:
-    # This is a fake engine, and essentially a big RCS thruster.
-    # It's about double as powerful as the microEngine, so we cost it
-    # appropriately.
-    FASA_Mercury_LFEng: 
-        cost: 120
-
-    # Early solar -- again, expensive.
-    # 1/4 the size of solarPanels5, and so 1/4 the cost.
-    FASASolarMini:
-        cost: 75
-
-
-# TIER 2.5
-enhancedSurvivability: # Early capsules
+# basic capsules with orbital reentry, 1960-63. mercury/vostok
+enhancedSurvivability:
     # Apparently the launch tower is used for loading astronauts,
     # so it should go here, right?
     FASAlaunchTower:
         cost: 10 #yeah, should really be expensive, but then who would use it?
-        
-    # Life support
-
-    #FASA Mercury things
-    FASAGeminiDecDark125:
-        cost: 30    # Totally made up, but balanced with other decouplers
-        
     # FASA Mercury
-    # see above for Mercury sources/notes.
-    # the 88mil and the 4.4mil apportioned 
-
     FASAMercuryPod: &mercury_pod
         entryCost: 90600 # 74.6m plus 16000 for heat shielding
         cost: 3730
@@ -173,15 +198,14 @@ enhancedSurvivability: # Early capsules
     FASA_Mercury_Eng: &FASA_Mercury_Eng
         entryCost: 1600
         cost: 80
-
     FASAMercuryDec:
         entryCost: 200
         cost: 10
     FASAGeminiDecDark125_Redstone:
-#        entryCost: 200
         cost: 30
+    FASAGeminiDecDark125:
+        cost: 30    # Totally made up, but balanced with other decouplers
     FASAGeminiDecDark125_Atlas:
-#        entryCost: 500
         cost: 50
     FASAMercuryMiniSRB:
         cost: 2
@@ -191,150 +215,37 @@ enhancedSurvivability: # Early capsules
     FASA_Mercury_Parachute_Box: #FIXME RC has cost issues?
         entryCost: 1600
         cost: 80
-
     FASAMercuryPodRCS:
         entryCost: 1000
-        cost: 17
-    
+        cost: 17  
     # Yes, Mercruy is the correct spelling on this. :/
     FASAMercruyCap: #old cap, unused by Mercury.
-#        entryCost: 88000
         cost: 50
+    # This is a fake engine, and essentially a big RCS thruster.
+    # It's about double as powerful as the microEngine, so we cost it
+    # appropriately.
+    FASA_Mercury_LFEng: 
+        cost: 120
 
+# antennae, fuel cells, high-efficiency batteries, foldable solar panels, 1964
+electrics:
+    # Radio and plasma wave antennae. Pretty much every probe to every
+    # planet ever had these. The tech isn't fancy or hard, and since this
+    # is the node at which we make interplanetary missions possible, it's
+    # where we should also have this basic tech available.
+    #
+    # Plus they look pretty darn cool.
+    # Early solar -- again, expensive.
+    # 1/4 the size of solarPanels5, and so 1/4 the cost.
+    FASASolarMini:
+        cost: 75
+    FASAAgenaAnt:
+        cost: 20
 
+# TIER 3.5
 
-# TIER 3
-# 1960-~1966 "first kerbal in space" : mercury/scout/atlas, mariner, block E&L/vostok, polyot. RP-0 TL2.
-advRocketry:
-
-
-# FASA Agena (CORONA)
-
-    FASAAgena_Engine: &AgenaEngine # Bell 8xxx engine for Agena
-        cost: 350
-
-    # TL2 1960-65 tech or so. Gemini, Voskhod, etc.
-        
-    FASAApolloLFEH1: &H1
-        cost: 1050
-        entryCost: 53750 # 33750 + 20,000 from LR79
-
-    FASAStrS1BWing:
-        cost: 50
-    FASAApalloLFTS1BStage1:
-        cost: 1800
-    FASA_SIB:
-        cost: 1800
-    FASAGeminiLFECentarTwin: # Transtage 
-        cost: 4300
-
-    #Europa launcher
-    FASASaturnUllage: &SaturnUllage
-        cost: 10
-
-        # Staged Combustion TL2
-hydroloxTL2:
-    FASAGeminiLFTCentar: # Centaur A/B/C/D/D1 stage
-        cost: 1201 # no cited research cost tho
-   
-    FASAApolloLFERL10: &RL10
-        cost: 1300 # lowered based off Centaur costs on Titan IIIE via http://www.astronautix.com/articles/costhing.htm
-        entryCost: 60000
-
-fuelSystems: # Staged combustion, TL2
-
-matureSolids:
-
-generalConstruction:
-    FASAAgenaLFT_b:
-        cost: 50 # compare to proc part costs
-
-    # The MOL cargo sections are here, because it's totally
-    # fine to give players cargo bays early on, and they look cool. :)
-
-    # These are all cheap, they're just structural doohickies after all.
-    # Costed the MOL as a stack + 2x caps.
-    FASAGeminiMOLEquip:
-        cost: 150
-    FASAGeminiMOLEquipCap:
-        cost: 25
-    FASAGeminiMOLEquipStack:
-        cost: 100
-    FASAAgenaLFT: # Agena D tankage
-        cost: 50 # TODO compare to proc part
-    FASAGeminiLFTLonger:
-        cost: 243
-        entryCost: 4860
-    FASAGeminiMOLEquipStack:
-        cost: 265
-        entryCost: 5275
-    FASAGeminiLFTMedWhite:
-        cost: 265
-        entryCost: 5275
-          
-    FASA_Atlas_LFT_Cone2: # Atlas E/F core
-        cost: 300 # cheaper than original
-    #below part is the Atlas SLV-3, 1966 first use. Lunar Orbiter
-    #nearly the same as LV-3 so the 2 can be used interchangeably
-    FASAMercuryAtlasLFTLong:
-        cost: 400
-    FASAAtlasLV3C:
-        cost: 400
-        
-    FASAGeminiLFTLongIF:
-        cost: 200
-        
-basicScience:
-    # In Game 'Improved Instrumentation'
-
-    # These things are placed here by default, but they're not a bad selection,
-    # so let's get them costed out now...
-    
-    # Magnetometer boom. I can buy one of these for spacecraft use off the
-    # Internet for 11,000 EUR, which is only $1700 in 1960s USD. However it's
-    # got moving parts, and could have cost more back then, so let's give it
-    # a balanced value of $100k. Enough that you'd still put one on your science
-    # vessel, but not cheap enough you'd scatter them everywhere.
-    
-
-flightControl:
-    # Costed at $160 spacebucks, as it's the cost of a decent thruster ($60)
-    # plus a boom ($100).
-    # Stock docking ports
-    FASAAgenaDocking:
-        cost: 400
-    FASAAgena_Engine_FP: # flight pack (3-axis control system) for Agena D restartable engine
-        cost: 250
-    FASAAgena_Engine_FP_d: # ahistoric (with-SPS) Agena D pack
-        cost: 300
-# Gemini parts
-    FASAGeminiNoseCone2: &GeminiPort
-        entryCost: 50000
-        cost: 1000
-    FASAGeminiNoseCone2White: *GeminiPort
-    FASAGeminiPod2RCS: &GeminiPodRCS
-        entryCost: 36000
-        cost: 720
-    FASAGeminiPod2RCSWhite: *GeminiPodRCS
-    FASAGeminiUtilitySasRcs: # FC
-        entryCost: 40000
-        cost: 800
-    FASAGeminiSasRcs:
-    #FC
-    FASA_Gemini_RCS_Thrusters: &GeminiRCS
-        entryCost: 3000
-        cost: 60
-        
-    FASAICBMnosecone:
-        cost: 50
-    FASAICBMProbe: # guidance unit
-        cost: 300 # similar to other guidance units
-    FASAICBMMIRV: # 9MT nuclear warhead
-        cost: 16000 # expensive so fortunately no one will use it
-    FASAICBMSAS: # this is just a decoupler, not sure why is SAS in the title
-        cost: 125 # similar to the other decouplers
-        
-simpleCommandModules: # Second gen capsules
+# second-gen capsules, with EVAs, 1964. gemini/voskhod
+simpleCommandModules:
     # Extra survival modules, but not recyclers, they have
     # their own 'recycling' node.
 
@@ -358,61 +269,58 @@ simpleCommandModules: # Second gen capsules
     FASAGeminiPod2: &GeminiPod 
         entryCost: 286000 # was 270m, +16m for shielding
         cost: 5400
-        
     FASAGeminiMiniSRB: # small retro solid motor
         cost: 6 # 3x bigger than MercuryMiniSRB
-       
-    # FASAGeminiNoseCone2, FASAGeminiPod2RCS / FASAGeminiUtilitySasRcs, FASA_Gemini_RCS_Thrusters
-    # all go to flight control
-    # Gemini SM - has a fuel cell - electrics
-    
-
-electrics:
-    # Solar: Level 3 static, Level 2 moving
-    # 40x the size of a small panel. Linear scaling would have this at 12000 ($12m!)
-    # Let's not do linear scaling.
-
-    # Gemini SM - has a fuel cell
+    FASAGeminiNoseCone2: &GeminiPort
+        entryCost: 50000
+        cost: 1000
+    FASAGeminiNoseCone2White: *GeminiPort
+    FASAGeminiPod2RCS: &GeminiPodRCS
+        entryCost: 36000
+        cost: 720
+    FASAGeminiPod2RCSWhite: *GeminiPodRCS
+    FASAGeminiUtilitySasRcs: # FC
+        entryCost: 40000
+        cost: 800
+    FASAGeminiSasRcs:
+    #FC
+    FASA_Gemini_RCS_Thrusters: &GeminiRCS
+        entryCost: 3000
+        cost: 60       
     FASAGeminiUtilityPack: &GeminiSM
         entryCost: 178000
         cost: 3560
     FASAGeminiEngineFuel2: *GeminiSM
     FASAGeminiEngineFuelDescent:
-
-    # Radio and plasma wave antennae. Pretty much every probe to every
-    # planet ever had these. The tech isn't fancy or hard, and since this
-    # is the node at which we make interplanetary missions possible, it's
-    # where we should also have this basic tech available.
-    #
-    # Plus they look pretty darn cool.
-
-    # Apollo parts
-    FASAApollo_SM_Dish:
-        entryCost: 35000
-        cost: 1000
-    FASAApollo_SM_Light:
-        entryCost: 1750
-        cost: 50
-    FASALM_Antenna:
-        entryCost: 17500
-        cost: 500
-
+    # These are all cheap, they're just structural doohickies after all.
+    # Costed the MOL as a stack + 2x caps.
+    FASAGeminiMOLEquip:
+        cost: 150
+    FASAGeminiMOLEquipCap:
+        cost: 25
+    FASAGeminiMOLEquipStack:
+        cost: 265
+        entryCost: 5275
 
 # TIER 4
-# 1965-1970 "ground control to major kerman" : gemini/delta/centaur/thor/agena, surveyor/pioneer6-9, proton, voskhod/soyuz7K-OK/zond7K-L1, molniya/luna9-11. RP-0 TL3 F-1, H-1 uprated, etc.
+# 1967-1969 "the kraken has landed" : saturnV, apollo/LEM, pioneer9, soyuz7K-OK/zond7K-L1, RP-0 TL3 F-1, H-1 uprated, etc.
+
+# hydrolox engines, 1967
+hydroloxTL3:
+    FASAApolloLFEJ2: &J2Engine # J-2 (note the 200klbf model is 300f cheaper)
+        cost: 2500 # from https://github.com/KSP-RO/RP-0/issues/490
+        entryCost: 100000 # estimate from above and from deflation going backwards
+
+# heavy orbital rocketry, beyond LEO
 heavyRocketry:
     FASAApolloLFEF1: &F-1
         entryCost: 409361
-        cost: 5000 # via https://github.com/KSP-RO/RP-0/issues/490
-        
-        # Apollo parts
+        cost: 5000 # via https://github.com/KSP-RO/RP-0/issues/490   
+    # Apollo parts
     FASAApollo_SM_Engine: &ApolloSPS # Service Propulsion System
         entryCost: 24500
         cost: 700
-    
     Size3AdvancedEngine: *F-1
-    
-    #FASA
     FASALM_AscentEngine: &LMAE
         cost: 550
     FASALM_DescentEngine: &LMDE
@@ -420,26 +328,40 @@ heavyRocketry:
     FASA_Gemini_Lander_Eng: # engine for landers, smaller than LMDE
         cost: 450 # 2 times cheaper than Apollo
 
-hydroloxTL3:
-
-    FASAApolloLFEJ2: &J2Engine # J-2 (note the 200klbf model is 300f cheaper)
-        cost: 2500 # from https://github.com/KSP-RO/RP-0/issues/490
-        entryCost: 100000 # estimate from above and from deflation going backwards
-
-propulsionSystems: #staged combustion TL3 -- NK-15 here.
-    # Bobcat's Soviet Engines -Need Costing- WIP costing approximation using data from Yuri Sovetkin (600k-700k SUR for one engine manufacturing with 1USD of 1965 = 0.9 RUR)
-
-largeSolids: # TL3 solids
+# large segmented solids
+largeSolids:
     FASAGerminiSRB175_5Seg: # UA1204 
         cost: 4600 # Guess from 1205 and 1207 
-        
     FASAGerminiSRB175: &UA1205
         cost: 5320 # nautix Titan 3 - UA1205 stage, assume 1985 dollars. Confirmed via http://www.astronautix.com/articles/costhing.htm
     FASAGerminiSRB175White: *UA1205
     FASAGerminiSRBInlineSep:
         cost: 50 # FIXME guess
 
+# improved tanks, engines & heat shielding
 advConstruction:
+    TitanIUpper:
+        cost: 237 # estimated based on proc+premium Atlas pays for Avionics
+    FASATitanLR91Dec: # Aerojet LR-91 Decoupler
+        cost: 75
+    FASAGeminiLFTLonger:
+        cost: 243
+        entryCost: 4860
+    FASAGeminiLFTMedWhite:
+        cost: 265
+        entryCost: 5275        
+    FASAGeminiLFTLongIF:
+        cost: 200
+    FASAGeminiLFTTitan1:
+        cost: 144 # est based on proc   
+    FASAGeminiLFTLong:
+        cost: 187 # same as proc
+    FASAGeminiLFTMed:
+        cost: 250
+    FASAGeminiLFTShort: # Generic tank
+    # FIXME other Titan II parts go here, with costing.
+    FASAGeminiDecDark25_Titan3m:
+        cost: 75
     # Saturn parts
     FASAApalloLFTJ2:
         entryCost: 14000
@@ -473,21 +395,18 @@ advConstruction:
     FASAAtlasSLV3A:
         cost: 450
     FASASaturnSLA: &ApolloSLA # spacecraft lunar module adapter - base
-        cost: 150
-         
-    #Apollo
+        cost: 150        
+    # heatshield
     FASAApollo_CM_HeatShield: &ApolloHeatshield
         entryCost: 35000
         cost: 3000
-        
-    # Apollo parts
+    # fairings
     FASAApolloStrJ2Fairing:
         entryCost: 17500
         cost: 500
     FASAFairingsApolloPlate375m:
         entryCost: 14000
-        cost: 400
-    
+        cost: 400  
     FASAStrF1Fairing:
         entryCost: 14000
         cost: 400
@@ -496,11 +415,8 @@ advConstruction:
         cost: 400
     FASAFairingNoseconeHalf_10m: #Saturn V 396" Fairing Half
 
+# RCS, docking, avionics
 advFlightControl:
-    FASAAgenaProbe: &AgenaAvionics
-        cost: 800
-    FASAAgena_Engine_FP_b: # flight pack (secondary propulsion system) for Agena B restartable engine
-        cost: 300
     # Apollo parts
     FASAApollo_CM_RCS: &ApolloCMRCS
         entryCost: 3500
@@ -520,7 +436,6 @@ advFlightControl:
     FASALM_RCS: &ApolloLMRCS
         entryCost: 10500
         cost: 300
-
     # Avionics
     FASAApolloIU: &SaturnIU
         cost: 2000
@@ -529,7 +444,6 @@ advFlightControl:
         cost: 200
 
 commandModules: # Third generation capsules, it would seem.
-    # Apollo parts
     FASAApollo_CM_Decoupler: &ApolloDecouplerCM
         entryCost: 7000
         cost: 200
@@ -545,7 +459,7 @@ commandModules: # Third generation capsules, it would seem.
     FASAApollo_LES: &ApolloLES
         entryCost: 175000
         cost: 5000
-
+    # floats
     FASA_Apollo_Float_Ring:
         entryCost: 28000
         cost: 800
@@ -584,18 +498,18 @@ commandModules: # Third generation capsules, it would seem.
         entryCost: 7000 # based on the Apollo docking device
         cost: 2000
 
-spaceExploration: #crewed landing
+# crewed landers. LEM
+spaceExploration:
+    # gemini
     FASA_Gemini_Lander_Pod:
         cost: 2000 # 1-person lander cabin, same cost as for the 1-person landerCabinSmall 
-        
     FASAGeminiLegsX1: &GeminiLeg
         cost: 90
     FASAGeminiLegsX1white: *GeminiLeg
     FASA_Gemini_Lander_Leg_Part:
         cost: 90
     FASA_Gemini_Lander_Legs: # 4 landing legs so 4x more expensive
-        cost: 360
-       
+        cost: 360  
     # LM
     FASALM_AscentStage: &LMAscentStage
         entryCost: 280000
@@ -622,6 +536,7 @@ spaceExploration: #crewed landing
         entryCost: 7000
         cost: 200
 
+# antennae, probes, late 1960s
 advElectrics:
     # Apollo parts
     FASAALSEP_Device: &ALSEPSeismometer
@@ -633,84 +548,32 @@ advElectrics:
     FASAALSEP_Scanner: &ALSEPSpectrometer
         entryCost: 35000
         cost: 1000
-    FASAAgenaAnt:
-        cost: 20
+    # Apollo parts
+    FASAApollo_SM_Dish:
+        entryCost: 35000
+        cost: 1000
+    FASAApollo_SM_Light:
+        entryCost: 1750
+        cost: 50
+    FASALM_Antenna:
+        entryCost: 17500
+        cost: 500
 
+shortTermHabitation:
+    FASAGeminiMOLSci:
+        entryCost: 540000
+        cost: 35000 # same as stock lab
 
 # TIER 5
-# 1970-1980 "the kraken has landed" : saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, luna17, salyut1-6/almaz. RP-0 TL4.
-# TIER 5
+# 1970-1980 "islands in the sky" : bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, luna17, salyut1-6/almaz. RP-0 TL4.
 
+# mature hydrolox engines, 1970
 hydroloxTL4:
     FASAApolloLFEM1:
         entryCost: 770000
         cost: 22000
-        
 
-specializedControl: # Tl4 avioncis
-    FASADeltaAv2:
-        entryCost: 10000
-        cost: 400
-
-
-#TIER 4.5
-largeVolumeContainment: # TL4.5 solids
-    FASA_RO_UA1563:
-        cost: 7000 # little less than UA1564
-        entryCost: 170000
-    FASA_RO_UA1564:
-        cost: 8000 # the same as 5-segment RSRMV
-        entryCost: 200000
-
-# TIER 6
-# 1980-1990 "reusable space program" : STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG/kosmosTKS/FGB. RP-0 TL5.
-
-# TIER 6
-
-highPerformanceFuelSystems:
-
-    FASAGerminiSRB175_7Seg: #UA1206
-        cost: 6250 # Guess from 1205 and 1207
-    FASA_RO_UA1207: &UA1207 # UA1207 7-seg SRM
-        cost: 7218 # 24.36m nautix, assume 1985 dollars
-    KWsrbGlobeX10L: *UA1207
-
-# TIER 7
-# 1990-2000 "islands in the sky" : hubble/KISS/galileo/NEARshoemaker/deepspace1/ulysses, soyuz-TMA/fregat. RP-0 TL6, the first bits of EELV tech.
-
-avionicsTL6:
-    FASADeltaAv3:
-        cost: 600
-        entryCost: 15000
-
-# TIER 8
-# 2000-2010 "commercial resupply" : delta-2/atlas3-V, EOS/messenger/deepimpact/dawn/newhorizons, tiangong. RP-0 TL7, Modern day tech.
-
-avionicsTL7:
-    FASADeltaAv4:
-        cost: 1200
-        entryCost: 30000
-
-# TIER 9
-# 2010-2020 "back to the mun or bust" : orion/altair/ares, spaceY/antares/cygnus, angara/federation. RP-0 TL7.
-
-colossalRocketry:
-
-orbitalMegastructures:
-
-resourceExploitation:
-
-highEnergyScience:
-
-advAlectromagneticSystems:
-
-experimentalGriddedThrusters:
-
-
-# dragons BE HERE
-        
-specializedConstruction:
-    
+nanolathing:
     # FASA Nova Parts
     FASAApolloStrJ2StrJ23m5mDecNova:
         entryCost: 3500
@@ -726,14 +589,49 @@ specializedConstruction:
         cost: 400
     FASAAtlasSLV3C:
         entryCost: 450
-    
-nanolathing:
     FASAAtlasH:
         cost: 500
    
+# integrated circuit avionics, 1970s     
+specializedControl: # Tl4 avioncis
+    FASADeltaAv2:
+        entryCost: 10000
+        cost: 400
 
+#TIER 5.5
+
+# large segmented solids
+largeVolumeContainment:
+    FASA_RO_UA1563:
+        cost: 7000 # little less than UA1564
+        entryCost: 170000
+    FASA_RO_UA1564:
+        cost: 8000 # the same as 5-segment RSRMV
+        entryCost: 200000
+
+# TIER 6
+# 1980-1990 "reusable space program" : STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG/kosmosTKS/FGB. RP-0 TL5.
+
+# high-performance solids
+highPerformanceFuelSystems:
+    FASAGerminiSRB175_7Seg: #UA1206
+        cost: 6250 # Guess from 1205 and 1207
+    FASA_RO_UA1207: &UA1207 # UA1207 7-seg SRM
+        cost: 7218 # 24.36m nautix, assume 1985 dollars
+    KWsrbGlobeX10L: *UA1207
+
+# TIER 7
+# 1990-2000 "deep space probes" : hubble/KISS/galileo/NEARshoemaker/deepspace1/ulysses, soyuz-TMA/fregat. RP-0 TL6, the first bits of EELV tech.
+
+# orbital assembly avionics, 1990
+avionicsTL6:
+    FASADeltaAv3:
+        cost: 600
+        entryCost: 15000
+
+# 1990s construction
 exoticAlloys:
-    FASAGeminiLFTCentarCSM_D2: # Centaur D2 for Atlas II
+    FASAGeminiLFTCentarCSM_D2: # Centaur D2 for Atlas II, 1991-1998
     FASAAtlasII: # Atlas II tank
         cost: 750
         entryCost: 15000
@@ -742,36 +640,26 @@ exoticAlloys:
         cost: 300
         entryCost: 5000
 
-orbitalAssembly:
+# TIER 8
+# 2000-2010 "commercial resupply" : delta-2/atlas3-V, EOS/messenger/deepimpact/dawn/newhorizons, tiangong. RP-0 TL7, Modern day tech.
+
+# modern avionics
+avionicsTL7:
+    FASADeltaAv4:
+        cost: 1200
+        entryCost: 30000
+
+# TIER 9
+# 2010-2020 "back to the mun or bust" : orion/altair/ares, spaceY/antares/cygnus, angara/federation. RP-0 TL7.
+
+orbitalMegastructures:
     FASAGeminiLFTCentarCSM_D3: # Centaur D3 for Atlas III
     FASAGeminiLFTCentarCSM_D5: # Centaur D5 for Atlas V
 
-
-earlyStations:
-    FASAGeminiMOLSci:
-        entryCost: 540000
-        cost: 35000 # same as stock lab
-
-
 ORPHANS:
-
-    # FASA has unbalancing experiments, let's not have that.
-    # These could be placed later on in the tech tree, but for
-    # now they're here.
-    
     # Psh. You want a crew report? Send a kerbonaut.
     FASAProbeCamera:
-
     # Want to analyse soil? Bring some home.
     FASAProbeLaser:
-
     # Goo that's one millionth the weight? Nuh uh.
     FASAGeminiSciRadmeter:
-
-    # Here are a bunch of generic FASA tanks.
-    
-    FASAGeminiLFTShort: # Generic tank
-    FASAExplorerLFTSmall: # Generic tank
-    FASAExplorerLFTMed: # Generic tank
-    FASAMercuryLFTShortLarge: # Generic tank
-    
