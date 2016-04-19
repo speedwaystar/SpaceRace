@@ -1,0 +1,222 @@
+#* TIER 2
+# 1957-~1960 "kanines in space" : vanguard/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1.
+
+stability:
+    p1_decoupler:
+        cost: 10
+        entryCost: 50
+    pioneer1_booster:
+        cost: 30
+        entryCost: 100
+    #probes with SAS
+    grab-1:
+        cost: 100 # estimate based on capabilites in game
+        entryCost: 2000
+    pioneer_5:
+        cost: 360
+        entryCost: 7200
+    tiros-1:
+        cost: 280 # estimate based on capabilites (included engine) in game
+        entryCost: 5600
+    transit2a:
+        cost: 140 # cost kept comparable with other low tech probes
+        entryCost: 2800
+
+survivability:
+    explorer_6:
+        cost: 220
+        entryCost: 4400
+    pioneer_0_1_2:
+        cost: 170 # guess, priced higher than Explorer-1 given capabilities
+        entryCost: 3400
+    pioneer_3_4:
+        cost: 210 # guess, priced higher than Pioneer 0/1/2
+        entryCost: 4200
+    vanguard-1:
+        cost: 210
+        entryCost: 4200
+    vanguard-2:
+        cost: 240
+        entryCost: 4800
+    vanguard-3:
+        cost: 260
+        entryCost: 5200
+
+# TIER 3
+# 1960-~1966 "first kerbal in space" : mercury/scout/atlas, mariner, block E&L/vostok, polyot. RP-0 TL2.
+
+basicScience:
+    rn_mariner1_2:
+
+# TIER 4
+# 1965-1970 "ground control to major kerman" : gemini/delta/centaur/thor/agena, surveyor/pioneer6-9, proton, voskhod/soyuz7K-OK/zond7K-L1, molniya/luna9-11. RP-0 TL3 F-1, H-1 uprated, etc.
+
+advFlightControl:
+    rn_surveyor_s_engine: # simple version
+        cost: 1010
+    rn_surveyor_engines:
+        cost: 310
+        entryCost: 6200
+    rn_surveyor_retro:
+        cost: 180
+        entryCost: 3600
+
+miniaturization:
+    pioneer_6_7_8_9:
+        cost: 500
+        entryCost: 10000
+    rn_surveyor3:
+        cost: 1400
+        entryCost: 28000
+
+electrics:
+    rn_surveyor_solar:
+        cost: 220
+        entryCost: 4400
+
+# TIER 5
+# 1970-1980 "the kraken has landed" : saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, salyut1-6/almaz. RP-0 TL4.
+
+precisionEngineering:
+    p10_core:
+    pioneer_10_11:
+        cost: 800
+        entryCost: 14000
+    rn_voyager: # 865 mil for Voyager 1+2, reduced to 212 mil to be reasonable with other probes…, 1/40th entrycost
+        cost: 2841
+        entryCost: 90921
+    rn_vpam: # Payload assist module for Voyager, increased entrycost to offset voyager probe costs
+        cost: 970
+        entryCost: 22729
+
+# TIER 6
+# 1980-1990 "reusable space program" : STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG/kosmosTKS/FGB. RP-0 TL5.
+
+highPerformanceFuelSystems:
+    pam_d: # Star 48B
+        cost: 1203
+        entryCost: 24060
+    #Keeping these parts grouped since they only work together, guessed at costs
+    ius_bottom: # 1st stage of Inertial Upper Stage
+        cost: 2000
+        entryCost: 12000
+    ius_top: # 2nd stage of Inertial Upper Stage
+        cost: 800
+        entryCost: 15000
+    ius_dec_fs: # 1st stage IUS decoupler
+        cost: 60
+        entryCost: 1200
+    ius_dec_ss: # 2nd stage IUS decoupler
+        cost: 60
+        entryCost: 1200
+
+advScienceTech:
+    rn_magellan_scanner:
+        cost: 60
+        entryCost: 1200
+
+advUnmannedTech:
+    rn_tdrs_ag:
+    rn_tdrs_ag_dec:
+    magellan: # Price based on gao.gov figures, probe priced at 1/20th
+        cost: 3448
+        entryCost: 69778
+
+# TIER 7
+# 1990-2000 "islands in the sky" : hubble/KISS/galileo/NEARshoemaker/deepspace1/ulysses, soyuz-TMA/fregat. RP-0 TL6, the first bits of EELV tech.
+
+experimentalScience:
+    rn_galileo_scanner: # SCAN scanner for Galileo probe
+        cost: 200
+        entryCost: 2000
+
+largeProbes:
+    galileo_mb: # costs of project were 1.362 bil, due to other projects involved I reduced to half to keep in line
+        cost: 8816
+        entryCost: 176325
+    galileo_aprobe_bot: # Bottom portion of Galileo
+        cost: 60
+        entryCost: 1200
+    galileo_aprobe: # Atmospheric Probe
+        cost: 212
+        entryCost: 2240
+    galileo_hs_bot: # 3 part Galileo heatshield below
+        cost: 30
+        entryCost: 500
+    galileo_hs_mid: 
+        cost: 30
+        entryCost: 500
+    galileo_hs_top:
+        cost: 30
+        entryCost: 500
+    galileo_probe_hs_parachute: # Heatshield parachute
+        cost: 20
+        entryCost: 250
+    galileo_probe_parachute:
+        cost: 30
+        entryCost: 500
+    neo_near: # NEAR probe, Wiki States 124.9 million for development, 1/15th cost of R&D for balance
+        cost: 1131
+        entryCost: 16972
+    neo_ds1: # Deep space 1
+        cost: 1207
+        entryCost: 24139
+    neo_ulysses: # 207 mil per nasa, probe priced at 1/20th
+        cost: 2679
+        entryCost: 53596
+
+experimentalElectrics:
+    gdish_actual:
+        cost: 30
+        entryCost: 500
+    gdish_intended:
+        cost: 30
+        entryCost: 500
+
+# TIER 8
+# 2000-2010 "commercial resupply" : delta-2/atlas3-V, EOS/messenger/deepimpact/dawn/newhorizons, tiangong. RP-0 TL7, Modern day tech.
+
+artificialIntelligence:
+    rn_messenger: # Messenger Probe
+        cost: 3775
+        entryCost: 75502
+    eos_terra: # Earth Observing Sat Terra - 1.3 bil per NASA, reduced to 712mil for gameplay/balance.. still expensive
+        cost: 6776
+        entryCost: 135536
+    eos_aqua: # Earth Observing Sat Aqua
+        cost: 8404
+        entryCost: 168095
+    eos_aura: # Earth Observing Sat Aura
+        cost: 6644
+        entryCost: 132892
+    neo_dawn:
+        cost: 3449
+        entryCost: 68995
+    neo_deepimpact: # cost based on 333 mil project costs and probe at 1/20th
+        cost: 2729
+        entryCost: 54595
+    rn_new_horizons: 
+        cost: 5548
+        entryCost: 110975
+    eos_tdrs:
+        cost: 4857
+        entryCost: 97159
+    neo_stardust: # Stardust Probe
+        cost: 1894
+        entryCost: 37881
+
+highTechElectricalSystems:
+    neo_deepimpact_impactor:
+        cost: 30
+        entryCost: 500
+    neo_stardust_collector:
+        cost: 30
+        entryCost: 500
+    neo_stardust_para:
+        cost: 30
+        entryCost: 500
+     
+microwavePowerTransmission:
+    eos_terraalt: # Side solar panels for Terra
+        cost: 60
+        entryCost: 1200

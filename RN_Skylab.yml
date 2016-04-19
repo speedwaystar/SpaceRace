@@ -1,0 +1,46 @@
+
+# TIER 5
+# 1970-1980 "the kraken has landed" : saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, salyut1-6/almaz. RP-0 TL4.
+
+heavierRocketry:
+precisionPropulsion:
+
+advFuelSystems:
+
+specializedConstruction:
+    FASALM_DockingConern: &LMDockingDevice
+        entryCost: 14000
+        cost: 400
+    skylab_trs_docking:
+        entryCost: 100000
+        cost: 8000
+    fairing1: &SkylabFairing
+        entryCost: 40000
+        cost: 1000
+    fairing3: *SkylabFairing
+    mm_shield1: &SkylabShield
+        entryCost: 50000
+        cost: 1200
+    mm_shield2: *SkylabShield
+
+advExploration: # stations
+    skylab:
+        entryCost: 275000
+        cost: 70000
+
+precisionEngineering: # probes, science, scanners
+    rn_skylab_telescope:
+    skylab-trs:
+        entryCost: 50000
+        cost: 3000
+    skylab_asas:
+        entryCost: 80000
+        cost: 12500
+
+advElectrics: # antennae, batteries, solar
+    sl_left_panel:
+        entryCost: 60000
+        cost: 4200
+    sl_right_panel:
+        entryCost: 60000
+        cost: 4200

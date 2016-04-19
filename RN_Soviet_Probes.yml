@@ -1,0 +1,60 @@
+# TIER 2
+# 1957-~1960 "kanines in space" : vanguard/juno2/atlas/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7, sputnik/luna2-3. RP-0 TL1.
+
+# reentry-proof orbital probes, lunar impactors, 1959
+survivability:
+    luna2:
+    luna3:
+    Sputnik: &sputnik
+        cost: 10
+    sputnik2:
+        cost: 100
+    sputnik3:
+        cost: 300
+        
+# TIER 3
+# 1960-~1966 "ground control to major kerman" : mercury/gemini/scout/centaur/titan3, surveyor/pioneer6-7/mariner, block E&L/vostok/voskhod/proton/molniya, polyot/luna 9-13. RP-0 TL2.
+
+# mature orbital rocketry, 1963
+advRocketry: 
+    luna_ktdu:
+    polyot_side_engine:
+    luna_vernier:
+
+ # larger tanks
+generalConstruction:
+    luna_dec:
+
+# early digital avionics, 1964
+flightControl:
+    molniya_asas:
+
+# beyond LEO probes, science, scanners, 1964
+miniaturization:
+    # luna 9-13
+    luna9_als:
+    luna_als:
+    luna11_als:
+    luna13_als:
+    # molniya
+    molniya1:
+    # polyot
+    polyot:
+
+# soft landing on other bodies, 1964-67
+landing:
+    luna9_airbag_cvr:
+
+ # improved instrumentation, 1962
+basicScience:
+    l11_astro:
+    luna_astro:
+
+# antennae, fuel cells, high-efficiency batteries, foldable solar panels, 1964
+electrics:
+    luna_radio:
+    l11_radio:
+
+# deprecated
+ORPHANS:
+    luna9_airbag:

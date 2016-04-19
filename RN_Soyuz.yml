@@ -1,0 +1,148 @@
+# TIER 3
+# 1960-~1966 "first kerbal in space" : mercury/scout/atlas, mariner, block E&L/vostok, polyot. RP-0 TL2.
+
+generalConstruction:
+    rn_vostok_dec: &VostokDecoupler
+        entryCost: 7000
+        cost: 200
+
+flightControl:
+    rn_vostok_para: &VostokParachute
+        entryCost: 18000
+        cost: 500
+    rn_vostok_tdu:
+        entryCost: 25000
+        cost: 1000
+
+enhancedSurvivability:
+    rn_vostok_sc: &VostokPod
+        entryCost: 66000 # was 50m, +16m for heat shielding
+        cost: 1800
+
+# 1965-1970 "ground control to major kerman" : gemini/delta/centaur/thor/agena, surveyor/pioneer6-9, proton, voskhod/soyuz7K-OK/zond7K-L1, molniya/luna9-11. RP-0 TL3 F-1, H-1 uprated, etc.
+
+propulsionSystems:
+    rn_lk_lander_858: # RD-858
+        cost: 450 #19kn, 40% min throttle, cheaper than LMDE
+    rn_lk_lander_859: # RD-859
+        cost: 450 #19kn, 40% min throttle, cheaper than LMDE
+
+advConstruction:
+    ok_bo_male: &SoyuzOM
+        entryCost: 50000
+        cost: 1500
+    ok_bo_fem: *SoyuzOM
+    rn_voskhod_airlock: *SoyuzOM
+    ok_dec: &SoyuzDecoupler
+        entryCost: 7000
+        cost: 200
+    rn_voskhod_retro_dec: *SoyuzDecoupler
+    rn_zond_dec: *SoyuzDecoupler
+    rn_zond_top:
+
+landing:
+    ok_para: &SoyuzParachute
+        entryCost: 25000
+        cost: 800
+    rn_voskhod_retro:
+        entryCost: 25000
+        cost: 800
+
+advFlightControl:
+    ok_tft:
+        entryCost: 25000
+        cost: 800
+    ok_pao: &SoyuzPAO
+        entryCost: 75000
+        cost: 2000
+    rn_zond_asas:
+    
+simpleCommandModules:
+    rn_voskhod_sc: &VoskhodPod
+        entryCost: 71000 # was 55, +16 for shielding
+        cost: 2000
+    ok_sa: &SoyuzPod
+        entryCost: 70000
+        cost: 2500
+    rn_zond_sa: *SoyuzPod
+
+electrics: # antennae, batteries, solar
+    7k_ok_lsolar: &SoyuzSolar
+        entryCost: 70000
+        cost: 2000
+    7k_ok_rsolar: *SoyuzSolar
+    rn_7k_zond_lsolar: *SoyuzSolar
+    rn_7k_zond_rsolar: *SoyuzSolar
+
+# TIER 5
+# 1970-1980 "the kraken has landed" : saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, salyut1-6/almaz. RP-0 TL4.
+
+specializedConstruction:
+    rn_apas75:
+    rn_uda: # docking adapter for Apollo-Soyuz Test Project
+
+advLanding:
+    rn_lk_lander_legs:
+        cost: 750 # landing legs + 32kN SRB
+    rn_lok_para: *SoyuzParachute
+    ok_hs:
+        entryCost: 30000
+        cost: 1000
+
+specializedControl:
+    rn_astp_bo: *SoyuzOM 
+    rn_lok_bo: *SoyuzOM 
+    rn_lok_tdu: # 7K-LOK service module
+        cost: 3500 # little higher than for standard Soyuz service module (this one has more powerful engine)
+        entryCost: 95000
+    t_af_bo:
+        entryCost: 60000
+        cost: 1800
+    t_pao: *SoyuzPAO
+
+commandModules:
+    rn_lok_sa: # 7K-LOK descent module
+        cost: 3500 # somewhat higher than for Soyuz descent module because this one is rated for lunar reentry
+        entryCost: 95000
+    rn_lk_lander: # LK Lander pod
+        cost: 2000 # same as for stock 1-person lander
+
+precisionEngineering: # probes, science, scanners
+    rn_lok_dec: *SoyuzDecoupler # decoupler for 7K-LOK service module
+    t_bo:
+        entryCost: 60000
+        cost: 1800
+    t_dp: &SoyuzPortMale
+        entryCost: 70000
+        cost: 2000
+
+advElectrics: # antennae, batteries, solar
+    rn_7k_astp_lsolar: *SoyuzSolar
+    rn_7k_astp_rsolar: *SoyuzSolar
+
+# TIER 6
+# 1980-1990 "reusable space program" : STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG/kosmosTKS/FGB. RP-0 TL5.
+
+specializedCommandPods:
+    rn_tks:
+    rn_tks_rcs_block:
+    rn_tks_va_rcs:
+    rn_tks_retro:
+    rn_va_capsule:
+        entryCost: 600000
+        cost: 8000
+    rn_va_dec:
+    rn_va_les:
+    rn_va_para: *SoyuzParachute
+    t_pao2: *SoyuzPAO
+    tg_bo: &ProgressBO
+        entryCost: 60000
+        cost: 1800
+    tg_sa: &soyuzsm1
+        entryCost: 70000
+        cost: 2000
+
+advSolarTechnology: # solar
+    Kosmos_TKS_Solar_Array_rn:
+
+

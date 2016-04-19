@@ -1,0 +1,17 @@
+# TIER 6
+# 1980-1990 "reusable space program" : STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG. RP-0 TL5.
+
+# advanced rocketry
+veryHeavyRocketry: 
+  rn_zenit_rd120:
+  rn_zenit_rd17:
+  rn_zenit_stg1:
+  rn_zenit_stg2:
+
+nanolathing:
+  rn_zenit_p_dec:
+  rn_zenit_rd8:
+
+metaMaterials:
+  rn_zenit_fairing_11_152:
+  rn_zenit_fairing_13_652:

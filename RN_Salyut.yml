@@ -1,0 +1,66 @@
+
+# TIER 5
+# 1970-1980 "the kraken has landed" : saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, salyut1-6/almaz. RP-0 TL4.
+
+specializedConstruction:
+    s1_dp: &SoyuzPortFemale
+        entryCost: 50000
+        cost: 8000
+
+advLanding:
+    almaz_sr_para:
+        entryCost: 10000
+        cost: 1000
+
+specializedControl:
+    salyut_asas:
+        entryCost: 80000
+        cost: 12500
+    almaz_sr_dec:
+        entryCost: 2500
+        cost: 600
+    almaz_sr_retro:
+        entryCost: 1000
+        cost: 1000
+
+advExploration: #stations
+    salyut1-4:
+        entryCost: 145000
+        cost: 48000
+    almaz3-5:
+        entryCost: 150000
+        cost: 50000
+    salyut6:
+        entryCost: 160000
+        cost: 65000
+
+precisionEngineering: # probes, science, scanners
+    almaz_sample_return:
+        entryCost: 3000
+        cost: 800
+
+advElectrics: # antennae, batteries, solar
+    s1_lsolar: &SalyutSolar
+        entryCost: 40000
+        cost: 1200
+    s1_rsolar: *SalyutSolar
+    almaz_pan_l:  &AlmazSolar
+        entryCost: 30000
+        cost: 4000
+    almaz_pan_r: *AlmazSolar
+
+# TIER 6
+# 1980-1990 "reusable space program" : STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG/kosmosTKS/FGB. RP-0 TL5.
+
+nanolathing:
+    s6_dp:
+        entryCost: 50000
+        cost: 8000
+
+advScienceTech: # scanners, science, stations
+    salyut7:
+        entryCost: 170000
+        cost: 75000
+
+advSolarTechnology: # solar
+    Kosmos_Salyut_Solar_Array_rn:

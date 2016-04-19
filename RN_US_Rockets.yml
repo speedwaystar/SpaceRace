@@ -1,0 +1,186 @@
+# TIER 0
+# 1945-1955 "sounding rockets" aerobee, A4/blossom-1/bumper, R1-5. RP-0 TL-1, early tech.
+start:
+    #aerobee
+    rn_aerobee150_sas:
+    rn_aerobee100_mb:
+    rn_aerobee150_eng:
+    rn_aerobee150_srb:
+    rn_aerobee_payload_dec:
+    rn_aerobee150_srb_dec:
+    rn_aerobee150_fin2:
+    rn_aerobee150_srb_fin:
+    rn_aerobee_chute:
+    rn_aerobee150_nc:
+
+
+# TIER 1
+# "going ballistic" 1950-1957: redstone. RP0 TL0
+basicRocketry:
+
+    #aerobee srbs
+    rn_aerobee170_srb:
+   
+engineering101:
+    rn_aerobee150_fin:
+    rn_aerobee150_mb2:
+    rn_aerobee150_mb:
+    rn_aerobee150_rcs:
+    rn_aerobee170_srb_dec:
+    rn_aerobee170_srb_fin:
+
+
+#* TIER 2
+# "kanines in space" 1957-~1960: vanguard/juno2/thor-able, pioneer1-5/vanguard/grab/transit, explorer, R-7/vostok, sputnik/luna2-3. RP-0 TL1
+generalRocketry:
+
+    #aerobee
+    rn_aerobee300_srb:
+
+    # Engines
+    rn_x405: # X-405 (Vanguard main engine)
+        cost: 450 # very expensive for its performance.
+    rn_x405_vernier:
+        cost: 100 # 2x symmetry, total 650
+    rn_aj10_37:  # (Vanguard/Able/[Early]Delta upper stage)
+        cost: 150
+
+    # Redstone/Juno engine, kick motors
+    rn_junoii_sgt: &BabySergeant
+    rn_junoii_sgt_11:
+        cost: 40
+    rn_junoii_sgt_3:
+        cost: 12
+
+    # RD-107 & RD-108. From SXT clones
+    R7_Core_Engine: &RD108
+        cost: 700
+    R7_Booster_Engine: &RD107
+        cost: 680
+
+    # LR79 (Thor/Jupiter main engine)
+    # and LR89 (Atlas booster)
+    # Technically Atlas was ~2.6m per LV, so we're reducing LR89 costs.
+    # (the hard part is Atlas E was cheaper than Atlas D...)
+
+    rn_lr79:
+        cost: 450
+    rn_lr79_tp: # turbopump exhaust x2, total cost 650
+        cost: 100
+    rn_lr79_vernier: &LR101
+        cost: 50
+
+    rn_s3: # rocketdyne LR790NA-9 (Model S-3D) juno ii S3 main engine
+        cost: 650
+    # LR101 vernier (Thor/Jupiter/Atlas)
+    rn_s3_vernier: *LR101             
+
+    rn_aj10_104: # Ablestar's engine, has restart
+        cost: 250 
+   
+    # solid rockets
+
+    rn_thor_altair:
+    rn_thor_altair_e1:
+    rn_thor_altair_e2:
+
+    # Castor I (Sergeant / M33) solid motor
+    rn_thor_castor: &CastorI
+        cost: 300 # nautix 1.01m assume 1985 dollars
+
+    # Add Polaris and Scout parts here
+    rn_scout_stg1:
+    rn_scout_stg2:
+    rn_scout_stg3x1_4:
+    rn_scout_stg3x3:
+    rn_scout_stg4:
+
+stability:
+    # aerobee
+    rn_aerobee300_nc_sas:
+    rn_aerobee300_srb_dec:
+
+    # juno ii fuel tanks
+    rn_junoii_fs:  # juno ii first stage tank
+        cost: 350
+    rn_junoii_ss: # second stage tank
+
+    rn_junoii_nc: # nose cone
+        cost: 30
+
+    rn_thor_castor_dec:
+        cost: 10 #shouldn't be much. it's just structural part
+        entryCost: 500
+
+    # sergeant decouplers
+    rn_junoii_sgt_3_dec:
+        cost: 10
+    rn_junoii_sgt_11_dec:
+        cost: 20
+
+# thor-able-altair
+    rn_thor_fs:
+    rn_thor_sse:
+    rn_thor_winglet:
+    rn_thor_altair_dec:
+    rn_thor_altair_dec2:
+    rn_thor_altair_pdec:
+    rn_thor_fs_dec:
+    rn_thor_fs_dec2:
+    rn_thor_fs_dec3:
+    rn_thor_ss_as:
+    rn_thor_ss:
+    rn_thor_as_f2:
+    rn_thor_as_f1:
+    rn_thor_f1:
+    rn_thor_f2:
+    rn_thor_f3:
+    rn_thor_f3e:
+
+    rn_scout_winglet_black:
+    rn_scout_winglet_white:
+    rn_scout_jet_vane:
+    rn_scout_dec:
+    rn_scout_fairing:
+    rn_scout_fairing_x1_2:
+    rn_scout_fairing_x4:
+    scout_stg1_dec:
+    scout_stg2_dec:
+
+# TIER 3
+# "first kerbal in space" 1960-~1966: mercury/scout/atlas, mariner, block E&L/vostok, polyot. RP-0 TL2.
+advRocketry:
+    #aerobee
+    rn_aerobee350_eng:
+
+    # thor/scout
+    rn_thor_star20:
+        cost: 200
+    rn_thor_star37d:
+        cost: 200
+
+
+ # Staged combustion, TL2
+generalConstruction:
+    # aerobee
+    rn_aerobee350_mb:
+
+    rn_thor_de_f1: # thor/delta fairing
+    rn_thor_ss_de: # second stage tank
+
+flightControl:
+    rn_aerobee350_fin:
+    rn_aerobee350_nc:
+    rn_aerobee350_sas:
+    rn_aerobee350_srb_dec:
+
+# TIER 4 *heavyRocketry* "ground control to major kerman" 1965-1970: gemini/delta/centaur/thor/agena, surveyor/pioneer6-9, proton, voskhod/soyuz7K-OK/zond7K-L1, molniya/luna9-11. RP-0 TL3 F-1, H-1 uprated, etc.
+
+# TIER 5 *heavierRocketry* "the kraken has landed" 1970-1980: saturnV/titanIII, apollo/LEM/bigGemini, pioneer10-11/voyager/skylab, N1, soyuz7K-T+TM+OKS+LOK/LK/ASTP/apas75, salyut1-6/almaz. RP-0 TL4.
+heavierRocketry:
+    rn_scout_stg3: # scout-G third stage
+
+# TIER 6 *veryHeavyRocketry* "reusable space program" 1980-1990: STS/nova, spacelab/salyut7, ius/magellan/tdrsA-G, energia/zenit/buran/mir, soyuz-T/progress7k-TG/kosmosTKS/FGB. RP-0 TL5.
+# TIER 7 *experimentalRocketry* "islands in the sky" 1990-2000: hubble/KISS/galileo/NEARshoemaker/deepspace1/ulysses, soyuz-TMA/fregat. RP-0 TL6, the first bits of EELV tech.
+# TIER 8 *giganticRocketry* "commercial resupply" 2000-2010: delta-2/atlas3-V, EOS/messenger/deepimpact/dawn/newhorizons, tiangong. RP-0 TL7, Modern day tech.
+# TIER 9 *colossalRocketry* "back to the mun or bust" 2010-2020: orion/altair/ares, spaceY/antares/cygnus, angara/federation. RP-0 TL7.
